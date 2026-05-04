@@ -1,114 +1,96 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <article class="news-item">
-  <div class="news-content">
-    <h3>I to eye</h3>
-    
-    <div class="solo-show">Exhibition</div>
-
-    <div class="meta">
-      Israel Museum, Jerusalem<br>
-      Curator: Shir Meller-Yamaguchi<br>
-      27 Jun 2018 – 10 Jun 2019
+<article class="news-item" style="display: flex; gap: 30px; margin-bottom: 60px; align-items: flex-start; border-bottom: 1px solid #eee; padding-bottom: 40px;">
+    <div class="news-image" style="flex: 0 0 300px;">
+      <a href="suddenly-just-when-you-thought-it-was-gone.html">
+        <img src="../images/suddenly just when you thought it was gone/EAS-4.jpg" alt="Petach Tikva Museum" style="width: 100%; height: auto; border-radius: 4px;">
+      </a>
     </div>
-  </div>
-  
-  <img src="../images/forwards_1_orig.jpg" alt="I to eye exhibition at Israel Museum">
-</article>
-	
-  <article class="news-item">
-  <div class="news-content">
-    <div class="prize-category">The Ann and Ari Rosenblatt Prize for Visual Art 2016</div>
-    
-    <h3>7 MINUTES</h3>
-    
-    <div class="solo-show">Solo Show</div>
-
-    <div class="meta">
-      The Artist House in Tel Aviv<br>
-      Curator: Orly Hoffman<br>
-      15 Sep 2016
+    <div class="news-content">
+      <span style="text-transform: uppercase; font-size: 11px; letter-spacing: 2px; color: #999;">July – November 2025</span>
+      <h3 style="margin: 10px 0; font-size: 22px; font-weight: normal;"><a href="suddenly-gone-2025.html" style="text-decoration: none; color: #222;">Suddenly, just when you thought it was gone</a></h3>
+      <p style="font-weight: bold; color: #4a90a4; margin-bottom: 10px;">Solo Exhibition at Petach Tikva Museum of Art</p>
+      <p style="color: #666; font-size: 14px; line-height: 1.6;">Curated by Neta Gal-Azmon. Multimedia installation exploring childhood memories from Kibbutz Gesher and the War of Attrition.</p>
     </div>
-  </div>
+  </article>
 
-  <a href="../seven-2016.html">
-  <img src="../images/kitchen1_1_orig.jpg" alt="Ann and Ari Rosenblatt Prize">
-</a>
-</article>
-	
-  <article class="news-item">
-  <div class="news-content">
-    <h3>Post-Postmodernism ≠ Utopia</h3>
-    
-    <div class="solo-show">Group Exhibition</div>
-
-    <div class="meta">
-      Curator: Svetlana Reingold<br>
-      Haifa Museum of Art<br>
-      23 July 2016
+  <article class="news-item" style="display: flex; gap: 30px; margin-bottom: 60px; align-items: flex-start; border-bottom: 1px solid #eee; padding-bottom: 40px;">
+    <div class="news-image" style="flex: 0 0 300px;">
+      <img src="../images/forwards_1_orig.jpg" alt="I to eye" style="width: 100%; height: auto; border-radius: 4px;">
     </div>
-  </div>
-
-  <img src="../images/1200355081_orig.jpg" alt="Post-Postmodernism Exhibition at Haifa Museum">
-</article>
-
-  <article class="news-item">
-  <div class="news-content">
-    <h3>Sam and Adele Golden Foundation</h3>
-    
-    <div class="solo-show">Artist Residency</div>
-
-    <div class="meta">
-      New Berlin, NY, USA<br>
-      June – July 2016
+    <div class="news-content">
+      <span style="text-transform: uppercase; font-size: 11px; letter-spacing: 2px; color: #999;">Jun 2018 – Jun 2019</span>
+      <h3 style="margin: 10px 0; font-size: 22px; font-weight: normal; color: #222;">I to eye</h3>
+      <p style="font-weight: bold; color: #4a90a4; margin-bottom: 10px;">Exhibition at Israel Museum, Jerusalem</p>
+      <p style="color: #666; font-size: 14px;">Curator: Shir Meller-Yamaguchi.</p>
     </div>
-  </div>
+  </article>
 
-  <img src="../images/img-4560-copy_orig.jpg" alt="Golden Foundation Artist Residency">
-</article>
-
-  <article class="news-item">
-  <div class="news-content">
-    <h3>MIX&amp;MATCH 2</h3>
-    
-    <div class="solo-show">Group Exhibition</div>
-
-    <div class="meta">
-      The Artist House in Tel Aviv<br>
-      Curated by Orly Hoffman and Arie Berkowitz<br>
-      15 Oct – 14 Nov 2015
+  <article class="news-item" style="display: flex; gap: 30px; margin-bottom: 60px; align-items: flex-start; border-bottom: 1px solid #eee; padding-bottom: 40px;">
+    <div class="news-image" style="flex: 0 0 300px;">
+      <a href="seven.html">
+        <img src="../images/kitchen1_orig.jpg" alt="7 Minutes" style="width: 100%; height: auto; border-radius: 4px;">
+      </a>
     </div>
-  </div>
-
-  <img src="../images/220452_orig.jpg" alt="MIX&amp;MATCH 2 at The Artist House">
-</article>
-
-  <article class="news-item">
-  <div class="news-content">
-    <h3>Homage to The Red Sea</h3>
-    
-    <div class="solo-show">120th Anniversary of Marcel Janco (1895–1984)</div>
-
-    <div class="meta">
-      The Janco-Dada Museum, Ein Hod<br>
-      Opening: Friday, July 24, 2015
+    <div class="news-content">
+      <span style="text-transform: uppercase; font-size: 11px; letter-spacing: 2px; color: #d4af37;">Winner: Rosenblatt Prize 2016</span>
+      <h3 style="margin: 10px 0; font-size: 22px; font-weight: normal;"><a href="seven-2016.html" style="text-decoration: none; color: #222;">7 MINUTES</a></h3>
+      <p style="font-weight: bold; color: #4a90a4; margin-bottom: 10px;">Solo Show at The Artist House, Tel Aviv</p>
+      <p style="color: #666; font-size: 14px;">Curator: Orly Hoffman. Solo prize exhibition of the 2016 Ann and Ari Rosenblatt Prize for Visual Art.</p>
     </div>
-  </div>
+  </article>
 
-  <img src="../images/3653321_orig.jpg" alt="Homage to The Red Sea at Janco-Dada Museum">
-</article>
-
-  <article class="news-item">
-  <div class="news-content">
-    <h3>The MacDowell Colony</h3>
-    
-    <div class="solo-show">Fellowship</div>
-
-    <div class="meta">
-      New Hampshire, USA<br>
-      April – May 2015
+  <article class="news-item" style="display: flex; gap: 30px; margin-bottom: 60px; align-items: flex-start; border-bottom: 1px solid #eee; padding-bottom: 40px;">
+    <div class="news-image" style="flex: 0 0 300px;">
+      <img src="../images/1200355081_orig.jpg" alt="Haifa Museum" style="width: 100%; height: auto; border-radius: 4px;">
     </div>
-  </div>
+    <div class="news-content">
+      <span style="text-transform: uppercase; font-size: 11px; letter-spacing: 2px; color: #999;">July 2016</span>
+      <h3 style="margin: 10px 0; font-size: 22px; font-weight: normal; color: #222;">Post-Postmodernism ≠ Utopia</h3>
+      <p style="font-weight: bold; color: #4a90a4; margin-bottom: 10px;">Group Exhibition at Haifa Museum of Art</p>
+      <p style="color: #666; font-size: 14px;">Curator: Svetlana Reingold.</p>
+    </div>
+  </article>
 
-  <img src="../images/1813007_orig.jpg" alt="The MacDowell Colony Fellowship">
-</article>
-	
+  <article class="news-item" style="display: flex; gap: 30px; margin-bottom: 60px; align-items: flex-start; border-bottom: 1px solid #eee; padding-bottom: 40px;">
+    <div class="news-image" style="flex: 0 0 300px;">
+      <img src="../images/img-4560-copy_orig.jpg" alt="Golden Foundation" style="width: 100%; height: auto; border-radius: 4px;">
+    </div>
+    <div class="news-content">
+      <span style="text-transform: uppercase; font-size: 11px; letter-spacing: 2px; color: #999;">June – July 2016</span>
+      <h3 style="margin: 10px 0; font-size: 22px; font-weight: normal; color: #222;">Sam and Adele Golden Foundation</h3>
+      <p style="font-weight: bold; color: #4a90a4; margin-bottom: 10px;">Artist Residency, New Berlin, NY, USA</p>
+    </div>
+  </article>
+
+  <article class="news-item" style="display: flex; gap: 30px; margin-bottom: 60px; align-items: flex-start; border-bottom: 1px solid #eee; padding-bottom: 40px;">
+    <div class="news-image" style="flex: 0 0 300px;">
+      <img src="../images/220452_orig.jpg" alt="Mix & Match" style="width: 100%; height: auto; border-radius: 4px;">
+    </div>
+    <div class="news-content">
+      <span style="text-transform: uppercase; font-size: 11px; letter-spacing: 2px; color: #999;">Oct – Nov 2015</span>
+      <h3 style="margin: 10px 0; font-size: 22px; font-weight: normal; color: #222;">MIX &amp; MATCH 2</h3>
+      <p style="font-weight: bold; color: #4a90a4; margin-bottom: 10px;">Group Exhibition at The Artist House, Tel Aviv</p>
+    </div>
+  </article>
+
+  <article class="news-item" style="display: flex; gap: 30px; margin-bottom: 60px; align-items: flex-start; border-bottom: 1px solid #eee; padding-bottom: 40px;">
+    <div class="news-image" style="flex: 0 0 300px;">
+      <img src="../images/3653321_orig.jpg" alt="Janco-Dada" style="width: 100%; height: auto; border-radius: 4px;">
+    </div>
+    <div class="news-content">
+      <span style="text-transform: uppercase; font-size: 11px; letter-spacing: 2px; color: #999;">July 2015</span>
+      <h3 style="margin: 10px 0; font-size: 22px; font-weight: normal; color: #222;">Homage to The Red Sea</h3>
+      <p style="font-weight: bold; color: #4a90a4; margin-bottom: 10px;">Janco-Dada Museum, Ein Hod</p>
+      <p style="color: #666; font-size: 14px;">120th Anniversary of Marcel Janco.</p>
+    </div>
+  </article>
+
+  <article class="news-item" style="display: flex; gap: 30px; margin-bottom: 60px; align-items: flex-start; border-bottom: 1px solid #eee; padding-bottom: 40px;">
+    <div class="news-image" style="flex: 0 0 300px;">
+      <img src="../images/1813007_orig.jpg" alt="MacDowell Colony" style="width: 100%; height: auto; border-radius: 4px;">
+    </div>
+    <div class="news-content">
+      <span style="text-transform: uppercase; font-size: 11px; letter-spacing: 2px; color: #999;">April – May 2015</span>
+      <h3 style="margin: 10px 0; font-size: 22px; font-weight: normal; color: #222;">The MacDowell Colony</h3>
+      <p style="font-weight: bold; color: #4a90a4; margin-bottom: 10px;">Fellowship, New Hampshire, USA</p>
+    </div>
+  </article>
