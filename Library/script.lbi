@@ -1,0 +1,65 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><script>
+// Keep track of which image we are looking at
+let currentImgIndex = 0;
+let galleryImages = [];
+
+function openLightbox(element) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  
+  // Gather all images in the gallery into an array
+  galleryImages = Array.from(document.querySelectorAll('.gallery img'));
+  
+  // Find the index of the specific image that was clicked
+  currentImgIndex = galleryImages.indexOf(element);
+  
+  // Set the source and caption
+  lightboxImg.src = element.src;
+  lightboxCaption.innerHTML = element.getAttribute('data-caption');
+  
+  // Show the Lightbox
+  lightbox.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+function navigateLightbox(step, event) {
+  // Prevent the click from hitting the background (only applies to mouse clicks)
+  if (event) {
+    event.stopPropagation(); 
+  }
+  
+  if (galleryImages.length === 0) return;
+
+  // Calculate the next image index (Wraps around beginning/end)
+  currentImgIndex = (currentImgIndex + step + galleryImages.length) % galleryImages.length;
+  
+  // Grab the new image based on the calculated index
+  const nextImage = galleryImages[currentImgIndex];
+  
+  // Update the Lightbox view
+  document.getElementById('lightbox-img').src = nextImage.src;
+  document.getElementById('lightbox-caption').innerHTML = nextImage.getAttribute('data-caption');
+}
+
+// SURGICAL CHANGE: Keyboard Navigation Listener
+document.addEventListener('keydown', function(event) {
+  const lightbox = document.getElementById('lightbox');
+  
+  // Only trigger keyboard shortcuts if the lightbox is currently open
+  if (lightbox.style.display === 'flex') {
+    if (event.key === 'ArrowRight') {
+      navigateLightbox(1); // Go forward
+    } else if (event.key === 'ArrowLeft') {
+      navigateLightbox(-1); // Go backward
+    } else if (event.key === 'Escape') {
+      closeLightbox(); // Close window
+    }
+  }
+});
+</script>

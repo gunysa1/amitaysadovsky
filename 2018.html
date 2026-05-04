@@ -17,16 +17,20 @@
       <li class="has-sub">
         <a href="#" aria-haspopup="true">Works</a>
         <ul class="submenu">
+          <li><a href="suddenly-just-when-you-thought-it-was-gone.html">Suddenly, just when you thought it was gone 2025</a></li>
+          <li><a href="Without-Leaving-Home.html">Without Leaving Home 2024</a></li>
+          <li><a href="Glasshouse.html">Glasshouse 2019</a></li>
           <li><a href="2018.html">2018</a></li>
-          <li><a href="seven-2016.html">Seven 2016</a></li>
-          <li><a href="spare-parts-2014-2015.html">Spare Parts 2014-2015</a></li>
-          <li><a href="short-escape-2011-2013.html">Short Escape 2011-2013</a></li>
-          <li><a href="dreams-decipherer-2009-2011.html">Dreams Decipherer 2009-2011</a></li>
-          <li><a href="wall-installation-2009.html">Wall Installation 2009</a></li>
-          <li><a href="in-between-2006-2008.html">In Between 2006-2008</a></li>
-          <li><a href="shield-of-the-mighty-2011.html">Shield of the Mighty 2011 (paper)</a></li>
+          <li><a href="seven.html">Seven 2016</a></li>
+          <li><a href="Principle-of-Uncertainty.html">Principle of Uncertainty 2015</a></li>
+          <li><a href="spare-parts.html">Spare Parts 2014-2015</a></li>
+          <li><a href="short-escape.html">Short Escape 2011-2013</a></li>
+          <li><a href="dreams-decipherer.html">Dreams Decipherer 2010</a></li>
+          <li><a href="wall-installation.html">Wall Installation 2009</a></li>
+          <li><a href="in-between.html">In Between 2006-2008</a></li>
+          <li><a href="shield-of-the-mighty.html">Shield of the Mighty 2011 (paper)</a></li>
           <li><a href="quiet-island.html">Quiet Island - video 2012</a></li>
-          <li><a href="private-investigations-2004.html">Private Investigations 2004</a></li>
+          <li><a href="private-investigations.html">Private Investigations 2004</a></li>
         </ul>
       </li>
       <li class="has-sub">
@@ -42,8 +46,9 @@
     </ul>
   </nav>
 </header><!-- #EndLibraryItem --><main>
+<section class="slideshow-section" aria-label="Selected works">
   <h2 class="page-title">2018</h2>
-
+        </section>
 <div class="gallery">
   <figure><img src="images/ella-028s_1.jpg" data-caption="Title, Oil on Canvas, Year" onclick="openLightbox(this)" alt=""></figure>
   <figure><img src="images/ella-024s.jpg" data-caption="Title, Oil on Canvas, Year" onclick="openLightbox(this)" alt=""></figure>
@@ -71,12 +76,14 @@
 
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
   <span class="close">&times;</span>
+    <span class="prev-arrow" onclick="navigateLightbox(-1, event)">&#10094;</span>
+    <span class="next-arrow" onclick="navigateLightbox(1, event)">&#10095;</span>
   <div class="lightbox-wrapper">
-    <img id="lightbox-img" src="" alt="">
+    <img id="lightbox-img" src="placeholder.jpg" alt="">
     <div id="lightbox-caption"></div>
   </div>
 </div>
-</main><!-- #BeginLibraryItem "/Library/footer.lbi" --><footer class="site-footer">
+    </main><!-- #BeginLibraryItem "/Library/footer.lbi" --><footer class="site-footer">
   <div class="footer-left">© Ella Amitay Sadovsky</div>
 
   <div class="social">
@@ -89,21 +96,28 @@
   </div>
 
   <div class="footer-right">אלה אמיתי סדובסקי ©</div>
-</footer><!-- #EndLibraryItem --></body>
-</html>
-<script>
-	function openLightbox(element) {
+</footer><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/Library/script.lbi" --><script>
+// Keep track of which image we are looking at
+let currentImgIndex = 0;
+let galleryImages = [];
+
+function openLightbox(element) {
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const lightboxCaption = document.getElementById('lightbox-caption');
   
+  // Gather all images in the gallery into an array
+  galleryImages = Array.from(document.querySelectorAll('.gallery img'));
+  
+  // Find the index of the specific image that was clicked
+  currentImgIndex = galleryImages.indexOf(element);
+  
+  // Set the source and caption
   lightboxImg.src = element.src;
   lightboxCaption.innerHTML = element.getAttribute('data-caption');
   
-  // Change display to flex to activate centering
+  // Show the Lightbox
   lightbox.style.display = 'flex';
-  
-  // Prevent the background page from scrolling while looking at art
   document.body.style.overflow = 'hidden';
 }
 
@@ -111,4 +125,41 @@ function closeLightbox() {
   document.getElementById('lightbox').style.display = 'none';
   document.body.style.overflow = 'auto';
 }
-</script>
+
+function navigateLightbox(step, event) {
+  // Prevent the click from hitting the background (only applies to mouse clicks)
+  if (event) {
+    event.stopPropagation(); 
+  }
+  
+  if (galleryImages.length === 0) return;
+
+  // Calculate the next image index (Wraps around beginning/end)
+  currentImgIndex = (currentImgIndex + step + galleryImages.length) % galleryImages.length;
+  
+  // Grab the new image based on the calculated index
+  const nextImage = galleryImages[currentImgIndex];
+  
+  // Update the Lightbox view
+  document.getElementById('lightbox-img').src = nextImage.src;
+  document.getElementById('lightbox-caption').innerHTML = nextImage.getAttribute('data-caption');
+}
+
+// SURGICAL CHANGE: Keyboard Navigation Listener
+document.addEventListener('keydown', function(event) {
+  const lightbox = document.getElementById('lightbox');
+  
+  // Only trigger keyboard shortcuts if the lightbox is currently open
+  if (lightbox.style.display === 'flex') {
+    if (event.key === 'ArrowRight') {
+      navigateLightbox(1); // Go forward
+    } else if (event.key === 'ArrowLeft') {
+      navigateLightbox(-1); // Go backward
+    } else if (event.key === 'Escape') {
+      closeLightbox(); // Close window
+    }
+  }
+});
+</script><!-- #EndLibraryItem --></body>
+</html>
+

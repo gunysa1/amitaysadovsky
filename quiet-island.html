@@ -17,16 +17,20 @@
       <li class="has-sub">
         <a href="#" aria-haspopup="true">Works</a>
         <ul class="submenu">
+          <li><a href="suddenly-just-when-you-thought-it-was-gone.html">Suddenly, just when you thought it was gone 2025</a></li>
+          <li><a href="Without-Leaving-Home.html">Without Leaving Home 2024</a></li>
+          <li><a href="Glasshouse.html">Glasshouse 2019</a></li>
           <li><a href="2018.html">2018</a></li>
-          <li><a href="seven-2016.html">Seven 2016</a></li>
-          <li><a href="spare-parts-2014-2015.html">Spare Parts 2014-2015</a></li>
-          <li><a href="short-escape-2011-2013.html">Short Escape 2011-2013</a></li>
-          <li><a href="dreams-decipherer-2009-2011.html">Dreams Decipherer 2009-2011</a></li>
-          <li><a href="wall-installation-2009.html">Wall Installation 2009</a></li>
-          <li><a href="in-between-2006-2008.html">In Between 2006-2008</a></li>
-          <li><a href="shield-of-the-mighty-2011.html">Shield of the Mighty 2011 (paper)</a></li>
+          <li><a href="seven.html">Seven 2016</a></li>
+          <li><a href="Principle-of-Uncertainty.html">Principle of Uncertainty 2015</a></li>
+          <li><a href="spare-parts.html">Spare Parts 2014-2015</a></li>
+          <li><a href="short-escape.html">Short Escape 2011-2013</a></li>
+          <li><a href="dreams-decipherer.html">Dreams Decipherer 2010</a></li>
+          <li><a href="wall-installation.html">Wall Installation 2009</a></li>
+          <li><a href="in-between.html">In Between 2006-2008</a></li>
+          <li><a href="shield-of-the-mighty.html">Shield of the Mighty 2011 (paper)</a></li>
           <li><a href="quiet-island.html">Quiet Island - video 2012</a></li>
-          <li><a href="private-investigations-2004.html">Private Investigations 2004</a></li>
+          <li><a href="private-investigations.html">Private Investigations 2004</a></li>
         </ul>
       </li>
       <li class="has-sub">
@@ -43,28 +47,103 @@
   </nav>
 </header><!-- #EndLibraryItem --><main>
   <h2 class="page-title">Quiet Island</h2>
-  <p class="intro">Single channel HD video, 5 minutes, 2012.</p>
+  
+  <div class="prose" style="margin-bottom: 24px; color: #666; font-size: 14px;">
+    <p>Single channel HD video, 5 minutes, 2012.</p>
+  </div>
 
   <div class="video-embed">
     <iframe src="https://player.vimeo.com/video/103327177" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
   </div>
 
-  <div class="prose" style="white-space: normal;">
-    <p>The performance was created on a bulletin board in the Musrara Neighborhood in Jerusalem, which was the border between Israel and Jordan between 1948â€“1967 â€” the no-man's land.</p>
+  <div class="prose" style="white-space: normal; color: #555; margin-bottom: 40px;">
+    <p>The performance was created on a bulletin board in the Musrara Neighborhood in Jerusalem, which was the border between Israel and Jordan between 1948–1967 — the no-man's land.</p>
     <p>The Musrara neighborhood is populated with both Jewish and Arab residents, long-established families, ultra-orthodox Jews, monastery residence and nuns, students, and artists. The contiguity of these contrasting communities in a relatively small area results in cultural differences that constantly threaten to fracture.</p>
     <p>The work was created between February and July 2012. The residents of the neighborhood also contributed to the story presented in the video.</p>
     <p>The painted life-size images and views are constantly transformed and recreated in response to different figures that pass by the mural and the stories they tell.</p>
   </div>
 
   <div class="gallery" style="margin-top: 32px;">
-    <figure><img src="images/277851.jpg" alt=""></figure>
-    <figure><img src="images/8132241.jpg" alt=""></figure>
-    <figure><img src="images/3130947.jpg" alt=""></figure>
-    <figure><img src="images/531416.jpg" alt=""></figure>
-    <figure><img src="images/399356.jpg" alt=""></figure>
-    <figure><img src="images/6585551.jpg" alt=""></figure>
-  </div>
-</main><!-- #BeginLibraryItem "/Library/footer.lbi" --><footer class="site-footer">
+    <figure><img src="images/277851_orig.jpg" data-caption="Quiet Island (Video Still), 2012" onclick="openLightbox(this)" alt="Quiet Island Video Still 1"></figure>
+    <figure><img src="images/8132241_orig.jpg" data-caption="Quiet Island (Video Still), 2012" onclick="openLightbox(this)" alt="Quiet Island Video Still 2"></figure>
+    <figure><img src="images/3130947_orig.jpg" data-caption="Quiet Island (Video Still), 2012" onclick="openLightbox(this)" alt="Quiet Island Video Still 3"></figure>
+    <figure><img src="images/531416_orig.jpg" data-caption="Quiet Island (Video Still), 2012" onclick="openLightbox(this)" alt="Quiet Island Video Still 4"></figure>
+    <figure><img src="images/399356_orig.jpg" data-caption="Quiet Island (Video Still), 2012" onclick="openLightbox(this)" alt="Quiet Island Video Still 5"></figure>
+    <figure><img src="images/6585551_orig.jpg" data-caption="Quiet Island (Video Still), 2012" onclick="openLightbox(this)" alt="Quiet Island Video Still 6"></figure>
+  </div><!-- #BeginLibraryItem "/Library/lighbox.lbi" -->  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <span class="prev-arrow" onclick="navigateLightbox(-1, event)">&#10094;</span>
+    <span class="next-arrow" onclick="navigateLightbox(1, event)">&#10095;</span>
+    
+    <div class="lightbox-wrapper" onclick="event.stopPropagation()">
+      <img id="lightbox-img" src="images/placeholder.jpg" alt="Enlarged Artwork">
+      <div id="lightbox-caption"></div>
+    </div>
+  </div><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/Library/script.lbi" --><script>
+// Keep track of which image we are looking at
+let currentImgIndex = 0;
+let galleryImages = [];
+
+function openLightbox(element) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  
+  // Gather all images in the gallery into an array
+  galleryImages = Array.from(document.querySelectorAll('.gallery img'));
+  
+  // Find the index of the specific image that was clicked
+  currentImgIndex = galleryImages.indexOf(element);
+  
+  // Set the source and caption
+  lightboxImg.src = element.src;
+  lightboxCaption.innerHTML = element.getAttribute('data-caption');
+  
+  // Show the Lightbox
+  lightbox.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+function navigateLightbox(step, event) {
+  // Prevent the click from hitting the background (only applies to mouse clicks)
+  if (event) {
+    event.stopPropagation(); 
+  }
+  
+  if (galleryImages.length === 0) return;
+
+  // Calculate the next image index (Wraps around beginning/end)
+  currentImgIndex = (currentImgIndex + step + galleryImages.length) % galleryImages.length;
+  
+  // Grab the new image based on the calculated index
+  const nextImage = galleryImages[currentImgIndex];
+  
+  // Update the Lightbox view
+  document.getElementById('lightbox-img').src = nextImage.src;
+  document.getElementById('lightbox-caption').innerHTML = nextImage.getAttribute('data-caption');
+}
+
+// SURGICAL CHANGE: Keyboard Navigation Listener
+document.addEventListener('keydown', function(event) {
+  const lightbox = document.getElementById('lightbox');
+  
+  // Only trigger keyboard shortcuts if the lightbox is currently open
+  if (lightbox.style.display === 'flex') {
+    if (event.key === 'ArrowRight') {
+      navigateLightbox(1); // Go forward
+    } else if (event.key === 'ArrowLeft') {
+      navigateLightbox(-1); // Go backward
+    } else if (event.key === 'Escape') {
+      closeLightbox(); // Close window
+    }
+  }
+});
+</script><!-- #EndLibraryItem --></main><!-- #BeginLibraryItem "/Library/footer.lbi" --><footer class="site-footer">
   <div class="footer-left">© Ella Amitay Sadovsky</div>
 
   <div class="social">

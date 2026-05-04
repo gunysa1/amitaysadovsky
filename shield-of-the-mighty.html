@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ella Amitay Sadovsky - Shield of the Mighty 2011</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body><!-- #BeginLibraryItem "/Library/header.lbi" --><header class="site-header">
+  <div class="title-row">
+    <h1 class="site-title"><a href="index.html">ELLA AMITAY SADOVSKY</a></h1>
+    <div class="site-title-he">אלה אמיתי סדובסקי&nbsp;</div>
+  </div>
+  <nav class="site-nav" aria-label="Primary">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li class="has-sub">
+        <a href="#" aria-haspopup="true">Works</a>
+        <ul class="submenu">
+          <li><a href="suddenly-just-when-you-thought-it-was-gone.html">Suddenly, just when you thought it was gone 2025</a></li>
+          <li><a href="Without-Leaving-Home.html">Without Leaving Home 2024</a></li>
+          <li><a href="Glasshouse.html">Glasshouse 2019</a></li>
+          <li><a href="2018.html">2018</a></li>
+          <li><a href="seven.html">Seven 2016</a></li>
+          <li><a href="Principle-of-Uncertainty.html">Principle of Uncertainty 2015</a></li>
+          <li><a href="spare-parts.html">Spare Parts 2014-2015</a></li>
+          <li><a href="short-escape.html">Short Escape 2011-2013</a></li>
+          <li><a href="dreams-decipherer.html">Dreams Decipherer 2010</a></li>
+          <li><a href="wall-installation.html">Wall Installation 2009</a></li>
+          <li><a href="in-between.html">In Between 2006-2008</a></li>
+          <li><a href="shield-of-the-mighty.html">Shield of the Mighty 2011 (paper)</a></li>
+          <li><a href="quiet-island.html">Quiet Island - video 2012</a></li>
+          <li><a href="private-investigations.html">Private Investigations 2004</a></li>
+        </ul>
+      </li>
+      <li class="has-sub">
+        <a href="#" aria-haspopup="true">Etc</a>
+        <ul class="submenu">
+          <li><a href="news.html">News</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="articles.html">Articles</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header><!-- #EndLibraryItem --><main>
+<h2 class="page-title">Shield of the Mighty 2011</h2>
+  <div class="prose" style="margin-bottom: 24px; color: #666; font-size: 14px;">
+      <p>Paper works</p>
+
+  <div class="gallery">
+    <figure><img src="images/1642817_orig.jpg" data-caption="Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011" onclick="openLightbox(this)" alt="Shield of the Mighty, 2011"></figure>
+    <figure><img src="images/1715668_orig.jpg" data-caption="Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011" onclick="openLightbox(this)" alt="Shield of the Mighty, 2011"></figure>
+    <figure><img src="images/1740125_orig.jpg" data-caption="Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011" onclick="openLightbox(this)" alt="Shield of the Mighty, 2011"></figure>
+    <figure><img src="images/3924554_orig.jpg" data-caption="Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011" onclick="openLightbox(this)" alt="Shield of the Mighty, 2011"></figure>
+    <figure><img src="images/8367671_orig.jpg" data-caption="Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011" onclick="openLightbox(this)" alt="Shield of the Mighty, 2011"></figure>
+    <figure><img src="images/9173493_orig.jpg" data-caption="Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011" onclick="openLightbox(this)" alt="Shield of the Mighty, 2011"></figure>
+    <figure><img src="images/9270093_orig.jpg" data-caption="Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011" onclick="openLightbox(this)" alt="Shield of the Mighty, 2011"></figure>
+    <figure><img src="images/2348598_orig.jpg" data-caption="Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011" onclick="openLightbox(this)" alt="Shield of the Mighty, 2011"></figure>
+  </div><!-- #BeginLibraryItem "/Library/lighbox.lbi" -->  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <span class="prev-arrow" onclick="navigateLightbox(-1, event)">&#10094;</span>
+    <span class="next-arrow" onclick="navigateLightbox(1, event)">&#10095;</span>
+    
+    <div class="lightbox-wrapper" onclick="event.stopPropagation()">
+      <img id="lightbox-img" src="images/placeholder.jpg" alt="Enlarged Artwork">
+      <div id="lightbox-caption"></div>
+    </div>
+  </div><!-- #EndLibraryItem --><!-- #BeginLibraryItem "/Library/script.lbi" --><script>
+// Keep track of which image we are looking at
+let currentImgIndex = 0;
+let galleryImages = [];
+
+function openLightbox(element) {
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  
+  // Gather all images in the gallery into an array
+  galleryImages = Array.from(document.querySelectorAll('.gallery img'));
+  
+  // Find the index of the specific image that was clicked
+  currentImgIndex = galleryImages.indexOf(element);
+  
+  // Set the source and caption
+  lightboxImg.src = element.src;
+  lightboxCaption.innerHTML = element.getAttribute('data-caption');
+  
+  // Show the Lightbox
+  lightbox.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+function navigateLightbox(step, event) {
+  // Prevent the click from hitting the background (only applies to mouse clicks)
+  if (event) {
+    event.stopPropagation(); 
+  }
+  
+  if (galleryImages.length === 0) return;
+
+  // Calculate the next image index (Wraps around beginning/end)
+  currentImgIndex = (currentImgIndex + step + galleryImages.length) % galleryImages.length;
+  
+  // Grab the new image based on the calculated index
+  const nextImage = galleryImages[currentImgIndex];
+  
+  // Update the Lightbox view
+  document.getElementById('lightbox-img').src = nextImage.src;
+  document.getElementById('lightbox-caption').innerHTML = nextImage.getAttribute('data-caption');
+}
+
+// SURGICAL CHANGE: Keyboard Navigation Listener
+document.addEventListener('keydown', function(event) {
+  const lightbox = document.getElementById('lightbox');
+  
+  // Only trigger keyboard shortcuts if the lightbox is currently open
+  if (lightbox.style.display === 'flex') {
+    if (event.key === 'ArrowRight') {
+      navigateLightbox(1); // Go forward
+    } else if (event.key === 'ArrowLeft') {
+      navigateLightbox(-1); // Go backward
+    } else if (event.key === 'Escape') {
+      closeLightbox(); // Close window
+    }
+  }
+});
+</script><!-- #EndLibraryItem --></main><!-- #BeginLibraryItem "/Library/footer.lbi" --><footer class="site-footer">
+  <div class="footer-left">© Ella Amitay Sadovsky</div>
+
+  <div class="social">
+    <a href="https://www.facebook.com/amitaysadovsky" aria-label="Facebook" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7h2.4l.4-2.8h-2.8V9.4c0-.8.2-1.4 1.4-1.4h1.5V5.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.1H8v2.8h2.5V21z"/></svg>
+    </a>
+    <a href="https://www.instagram.com/ella.amitay.sadovsky/" aria-label="Instagram" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor"/></svg>
+    </a>
+  </div>
+
+  <div class="footer-right">אלה אמיתי סדובסקי ©</div>
+</footer><!-- #EndLibraryItem --></body>
+</html>
