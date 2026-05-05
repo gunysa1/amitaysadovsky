@@ -1,0 +1,53 @@
+---
+interface Props {
+  images: string[];
+}
+
+const { images } = Astro.props;
+---
+<div class="slideshow-container">
+  <div class="slideshow" id="slideshow">
+    {images.map((src, i) => (
+      <img class={i === 0 ? 'active' : ''} src={`/images/${src}`} alt="" />
+    ))}
+  </div>
+
+  <div class="slideshow-controls">
+    <button id="prevBtn" class="control-btn">Back</button>
+    <button id="playPauseBtn" class="control-btn">Pause</button>
+    <button id="nextBtn" class="control-btn">Next</button>
+  </div>
+</div>
+
+<script is:inline>
+  (function() {
+    const slides = document.querySelectorAll('#slideshow img');
+    if (slides.length === 0) return;
+
+    let current = 0;
+    let playing = true;
+    let timer = null;
+
+    const show = (i) => {
+      slides[current].classList.remove('active');
+      current = (i + slides.length) % slides.length;
+      slides[current].classList.add('active');
+    };
+
+    const next = () => show(current + 1);
+    const prev = () => show(current - 1);
+
+    const start = () => { timer = setInterval(next, 4000); };
+    const stop = () => { clearInterval(timer); timer = null; };
+
+    document.getElementById('nextBtn').addEventListener('click', () => { next(); if (playing) { stop(); start(); } });
+    document.getElementById('prevBtn').addEventListener('click', () => { prev(); if (playing) { stop(); start(); } });
+    document.getElementById('playPauseBtn').addEventListener('click', (e) => {
+      playing = !playing;
+      e.target.textContent = playing ? 'Pause' : 'Play';
+      if (playing) start(); else stop();
+    });
+
+    start();
+  })();
+</script>

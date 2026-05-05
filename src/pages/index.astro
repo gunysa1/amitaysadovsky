@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Slideshow from '../components/Slideshow.astro';
+
+const slideshowImages = [
+  'slideshow-01.jpg',
+  'dreams-decipherer-01.jpg',
+  'slideshow-03.jpg',
+  'slideshow-04.jpg',
+  'slideshow-05.jpg',
+  '2018-20.jpg',
+  '2018-17.jpg',
+  '2018-19.jpg',
+  '2018-16.jpg',
+  '2018-01.jpg',
+];
+---
+<BaseLayout title="Ella Amitay Sadovsky - Home" currentPath="index">
+  <main>
+    <div class="home-grid">
+      <section class="news-col" aria-label="News">
+        <h2 class="page-title">News</h2>
+
+        <article class="news-item">
+          <div class="news-content">
+            <h3>I to eye</h3>
+            <div class="solo-show">Exhibition</div>
+            <div class="meta">
+              Israel Museum, Jerusalem<br>
+              Curator: Shir Meller-Yamaguchi<br>
+              27 Jun 2018 – 10 Jun 2019
+            </div>
+          </div>
+          <img src="/images/forwards_1_orig.jpg" alt="I to eye exhibition">
+        </article>
+
+        <article class="news-item">
+          <div class="news-content">
+            <div class="prize-category">The Ann and Ari Rosenblatt Prize 2016</div>
+            <h3>7 MINUTES</h3>
+            <div class="solo-show">Solo Show</div>
+            <div class="meta">
+              The Artist House in Tel Aviv<br>
+              Curator: Orly Hoffman<br>
+              15 Sep 2016
+            </div>
+          </div>
+          <img src="/images/kitchen1_orig.jpg" alt="7 MINUTES exhibition">
+        </article>
+
+        <article class="news-item">
+          <div class="news-content">
+            <h3>Post-Postmodernism ≠ Utopia</h3>
+            <div class="solo-show">Group Exhibition</div>
+            <div class="meta">
+              Haifa Museum of Art<br>
+              Curator: Svetlana Reingold<br>
+              23 July 2016
+            </div>
+          </div>
+          <img src="/images/1200355081_orig.jpg" alt="Post-Postmodernism Exhibition">
+        </article>
+      </section>
+
+      <section class="slideshow-section" aria-label="Selected works">
+        <Slideshow images={slideshowImages} />
+      </section>
+    </div>
+  </main>
+</BaseLayout>

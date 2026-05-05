@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(cd \"c:\\\\Users\\\\Administrator\\\\Documents\\\\Sites\\\\Ella Amitay Sadovsky website\"; $cssFile = Get-ChildItem -Path \"css\\\\style.css\"; Write-Host \"CSS file size: $\\($cssFile.Length\\) bytes\"; \\(Get-Content \"css\\\\style.css\" | Measure-Object -Line\\).Lines)",
+      "PowerShell(cd \"c:\\\\Users\\\\Administrator\\\\Documents\\\\Sites\\\\Ella Amitay Sadovsky website\"; Write-Host \"=== IMAGES DIRECTORIES ===\"; Get-ChildItem -Path \"images\" -Directory | ForEach-Object { $name = $_.Name; $count = \\(Get-ChildItem -Path \"images\\\\$name\" -File -Recurse | Measure-Object\\).Count; Write-Host \"$name : $count files\" })",
+      "PowerShell(cd \"c:\\\\Users\\\\Administrator\\\\Documents\\\\Sites\\\\Ella Amitay Sadovsky website\"; Write-Host \"=== PDFS FOLDER ===\"; $pdfCount = \\(Get-ChildItem -Path \"pdfs\" -File | Measure-Object\\).Count; Write-Host \"PDF files: $pdfCount\"; Get-ChildItem -Path \"pdfs\" -File | Select-Object Name | Format-Table -AutoSize)",
+      "PowerShell(cd \"c:\\\\Users\\\\Administrator\\\\Documents\\\\Sites\\\\Ella Amitay Sadovsky website\"; Get-ChildItem -Path \"src\" -Force -Recurse | Select-Object @{Name=\"Path\";Expression={$_.FullName.Replace\\(\"c:\\\\Users\\\\Administrator\\\\Documents\\\\Sites\\\\Ella Amitay Sadovsky website\\\\src\\\\\", \"\"\\)}} | Format-Table -AutoSize)",
+      "PowerShell(cd \"c:\\\\Users\\\\Administrator\\\\Documents\\\\Sites\\\\Ella Amitay Sadovsky website\"; Get-ChildItem -Path \"public\" | Select-Object Name, @{Name=\"Type\";Expression={if\\($_.PSIsContainer\\){\"DIR\"}else{\"FILE\"}}})",
+      "Bash(rm -rf src/layouts src/pages src/env.d.ts)",
+      "Bash(cp CNAME public/CNAME)",
+      "Bash(cp .htaccess public/.htaccess)",
+      "Bash(mkdir -p src/layouts src/components src/data/galleries src/pages)"
+    ]
+  },
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "claude-md-management@claude-plugins-official": true
+  }
+}

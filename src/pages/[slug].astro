@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { works } from '../data/works';
+
+export async function getStaticPaths() {
+  return works.map((work) => ({
+    params: { slug: work.slug },
+    props: { work },
+  }));
+}
+
+const { work } = Astro.props;
+---
+
+<BaseLayout title={work.title}>
+  <main>
+    <h2 class="page-title">{work.title}</h2>
+    
+    <div class="gallery">
+      {work.images.map((image) => (
+        <img 
+          src={image.src} 
+          alt={image.caption || work.title} 
+          data-caption={image.caption}
+          class="gallery-item"
+          loading="lazy"
+        />
+      ))}
+    </div>
+  </main>
+</BaseLayout>

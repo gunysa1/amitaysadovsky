@@ -1,0 +1,16 @@
+---
+export type GalleryImage = { src: string; caption: string; alt?: string };
+
+interface Props {
+  images: GalleryImage[];
+}
+
+const { images } = Astro.props;
+---
+<div class="gallery">
+  {images.map(img => (
+    <figure>
+      <img src={`/images/${img.src}`} data-caption={img.caption} onclick="openLightbox(this)" alt={img.alt ?? img.caption} />
+    </figure>
+  ))}
+</div>
