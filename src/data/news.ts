@@ -1,11 +1,15 @@
 export type NewsItem = {
   title: string;
+  title_he: string;
   date: string;
   dateColor?: string;
   subtitle: string;
+  subtitle_he: string;
   description?: string;
+  description_he?: string;
   image: string;
   imageAlt: string;
+  imageAlt_he?: string;
   link?: string;
 };
 
@@ -15,7 +19,7 @@ export const news: NewsItem[] = [
     date: 'July – November 2025',
     subtitle: 'Solo Exhibition at Petach Tikva Museum of Art',
     description: 'Curated by Neta Gal-Azmon. Multimedia installation exploring childhood memories from Kibbutz Gesher and the War of Attrition.',
-    image: '/images/suddenly-04.jpg',
+    image: '/images/suddenly-invite.jpg',
     imageAlt: 'Petach Tikva Museum',
     link: '/suddenly-just-when-you-thought-it-was-gone',
   },

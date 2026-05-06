@@ -1,0 +1,32 @@
+{
+  "nav": {
+    "home": "Home",
+    "works": "Works",
+    "etc": "Etc",
+    "about": "About",
+    "contact": "Contact",
+    "news": "News",
+    "publications": "Publications",
+    "articles": "Articles"
+  },
+  "site": {
+    "title": "Ella Amitay Sadovsky",
+    "description": "Ella Amitay Sadovsky - Artist and Scientist"
+  },
+  "footer": {
+    "copyright": "© Ella Amitay Sadovsky"
+  },
+  "pages": {
+    "home": "Home | Ella Amitay Sadovsky",
+    "about": "About | Ella Amitay Sadovsky",
+    "contact": "Contact | Ella Amitay Sadovsky",
+    "news": "News | Ella Amitay Sadovsky",
+    "articles": "Articles | Ella Amitay Sadovsky",
+    "publications": "Publications | Ella Amitay Sadovsky",
+    "notFound": "Page Not Found"
+  },
+  "content": {
+    "selectedWorks": "Selected works",
+    "latestNews": "News"
+  }
+}
