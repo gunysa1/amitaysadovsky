@@ -1,10 +1,50 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run *)",
-      "PowerShell(npm run build 2>&1)",
-      "PowerShell(Get-ChildItem \"C:\\\\Program Files\\\\nodejs\", \"C:\\\\Program Files \\(x86\\)\\\\nodejs\", \"$env:APPDATA\\\\npm\", \"$env:LOCALAPPDATA\\\\Programs\\\\nodejs\" -ErrorAction SilentlyContinue | Select-Object -First 5; Get-Command node -ErrorAction SilentlyContinue)",
-      "PowerShell($env:Path = \"C:\\\\Program Files\\\\nodejs;$env:Path\"; npm run build 2>&1 | Select-Object -Last 40)"
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(node:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git checkout:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)",
+      "Bash(git restore:*)",
+      "Bash(ls:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Bash(rm:*)",
+      "Bash(cat:*)",
+      "Bash(echo:*)",
+      "Bash(touch:*)",
+      "Bash(find:*)",
+      "PowerShell(npm *)",
+      "PowerShell(npx *)",
+      "PowerShell(node *)",
+      "PowerShell(& \"C:\\Program Files\\nodejs\\npm.cmd\" *)",
+      "PowerShell(& \"C:\\Program Files\\nodejs\\npx.cmd\" *)",
+      "PowerShell($env:Path = *)",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(Get-Content *)",
+      "PowerShell(Test-Path *)",
+      "PowerShell(New-Item *)",
+      "PowerShell(Remove-Item *)",
+      "PowerShell(Copy-Item *)",
+      "PowerShell(Move-Item *)",
+      "PowerShell(git *)"
+    ],
+    "deny": [
+      "Bash(rm -rf /:*)",
+      "Bash(git push --force:*)",
+      "Bash(git reset --hard:*)",
+      "PowerShell(Remove-Item -Recurse -Force C:\\*)",
+      "PowerShell(git push --force *)"
     ]
   }
 }

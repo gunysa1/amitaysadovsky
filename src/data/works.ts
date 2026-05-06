@@ -81,10 +81,55 @@ export const works: Work[] = [
     { src: '/images/2018-20.jpg', caption: 'Oil on Canvas, 2018' },
     { src: '/images/2018-21.jpg', caption: 'Oil on Canvas, 2018' }
   ] },
-  { slug: 'seven', title: 'Seven 2016', images: [] },
-  { slug: 'Principle-of-Uncertainty', title: 'Principle of Uncertainty 2015', images: [] },
-  { slug: 'spare-parts', title: 'Spare Parts 2014-2015', images: [] },
-  { slug: 'short-escape', title: 'Short Escape 2011-2013', images: [] },
+  { slug: 'seven', title: 'Seven 2016', images: [
+    { src: '/images/seven-01.jpg', caption: 'Seven (Video Installation Still), 2016' },
+    { src: '/images/seven-02.jpg', caption: 'Seven (Video Installation Still), 2016' },
+    { src: '/images/seven-03.jpg', caption: 'Seven (Video Installation Still), 2016' },
+    { src: '/images/seven-04.jpg', caption: 'Seven (Video Installation Still), 2016' },
+    { src: '/images/seven-05.jpg', caption: 'Seven (Video Installation Still), 2016' },
+    { src: '/images/seven-06.jpg', caption: 'Seven (Video Installation Still), 2016' },
+    { src: '/images/seven-07.jpg', caption: 'Seven (Video Installation Still), 2016' },
+    { src: '/images/seven-08.jpg', caption: 'Seven (Video Installation Still), 2016' },
+    { src: '/images/seven-09.jpg', caption: 'Seven (Video Installation Still), 2016' },
+    { src: '/images/seven-10.jpg', caption: 'Seven (Video Installation Still), 2016' },
+    { src: '/images/seven-11.jpg', caption: 'Seven (Video Installation Still), 2016' },
+    { src: '/images/seven-12.jpg', caption: 'Seven (Video Installation Still), 2016' }
+  ] },
+  { slug: 'Principle-of-Uncertainty', title: 'Principle of Uncertainty 2015', images: [
+    { src: '/images/principle-of-uncertainty-01.jpeg', caption: 'Certainty and Clemente, oil, acrylic and fabric collage on canvas, 206x166 cm, 2014' },
+    { src: '/images/principle-of-uncertainty-02.jpeg', caption: 'Yes or No, oil on canvas, 175x200 cm, 2014' },
+    { src: '/images/principle-of-uncertainty-03.jpeg', caption: 'Slave and J. Bathe in George Washington\'s Bathtub, oil, acrylic and collage of fabrics on canvas, 200x165 cm, 2014' },
+    { src: '/images/principle-of-uncertainty-04.jpeg', caption: 'Bargain Reality 2, oil, acrylic and fabric on canvas, 171x216 cm, 2014' },
+    { src: '/images/principle-of-uncertainty-05.jpeg', caption: '1. The Waterfall 2. The Fan 3. The Shirt, oil, acrylic and fabric collage on canvas, 166x210 cm, 2014' },
+    { src: '/images/principle-of-uncertainty-06.jpeg', caption: 'Without Flower Arrangement, oil, acrylic, pigments and fabric collage on canvas, 207x157 cm, 2014' },
+    { src: '/images/principle-of-uncertainty-07.jpeg', caption: 'Flower Arrangement 2, oil, acrylic and fabric collage on canvas, 215x135 cm, 2014' },
+    { src: '/images/principle-of-uncertainty-08.jpeg', caption: '"At the age of 37 she realized she\'d never ride through Paris in a sports car with the warm wind in her hair", oil on canvas, 175x175 cm, 2013' },
+    { src: '/images/principle-of-uncertainty-09.jpeg', caption: 'Orphan (Work is a Supreme Value), oil on canvas, 175x200 cm, 2013' },
+    { src: '/images/principle-of-uncertainty-10.jpeg', caption: 'Principle of Uncertainty, oil, acrylic and fabric collage on canvas, 195x165 cm, 2014' },
+    { src: '/images/principle-of-uncertainty-11.jpeg', caption: 'The Continuum Concept, oil on canvas, 175x175 cm, 2013' },
+    { src: '/images/principle-of-uncertainty-12.jpeg', caption: 'Mother, Rooster and Egg, oil on canvas, 112x175 cm, 2011' }
+  ] },
+  { slug: 'spare-parts', title: 'Spare Parts 2014-2015', images: [
+    { src: '/images/spare-parts-01.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
+    { src: '/images/spare-parts-02.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
+    { src: '/images/spare-parts-03.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
+    { src: '/images/spare-parts-04.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
+    { src: '/images/spare-parts-05.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
+    { src: '/images/spare-parts-06.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
+    { src: '/images/spare-parts-07.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
+    { src: '/images/spare-parts-08.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
+    { src: '/images/spare-parts-09.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
+    { src: '/images/spare-parts-10.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
+    { src: '/images/spare-parts-11.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
+    { src: '/images/spare-parts-12.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
+    { src: '/images/spare-parts-13.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
+    { src: '/images/spare-parts-14.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' }
+  ] },
+  { slug: 'short-escape', title: 'Short Escape 2011-2013', images: [
+    { src: '/images/short-escape-01.jpg', caption: 'Short Escape, Oil, acrylic and fabric collage on canvas, 2012' },
+    { src: '/images/short-escape-02.jpg', caption: 'Short Escape, Oil, acrylic and fabric collage on canvas, 2012' },
+    { src: '/images/short-escape-03.jpg', caption: 'Short Escape, Oil, acrylic and fabric collage on canvas, 2012' }
+  ] },
   { slug: 'dreams-decipherer', title: 'Dreams Decipherer 2010', images: [
     { src: '/images/dreams-decipherer-01.jpg', caption: 'Flower Arrangement, Oil, polymer and pigment on fabric, 215x174 cm, 2010' },
     { src: '/images/dreams-decipherer-02.jpg', caption: 'Everlasting Tenure in the Region of Measure, Oil, polymer and pigment on fabric, 215x139 cm, 2010' },
@@ -98,7 +143,16 @@ export const works: Work[] = [
     { src: '/images/dreams-decipherer-10.jpg', caption: 'Roman, Turkish and the One for the Train, Oil, polymer, acrylic and pigment on fabric, 63.5x64 cm, 2008' },
     { src: '/images/dreams-decipherer-11.jpg', caption: 'Untitled (Diptych), Oil and acrylic on canvas, 100x90 cm, 2008' }
   ] },
-  { slug: 'wall-installation', title: 'Wall Installation 2009', images: [] },
+  { slug: 'wall-installation', title: 'Wall Installation 2009', images: [
+    { src: '/images/wall-installation-01.jpg', caption: 'Wall Installation, 2009' },
+    { src: '/images/wall-installation-02.jpg', caption: 'Wall Installation, 2009' },
+    { src: '/images/wall-installation-03.jpg', caption: 'Wall Installation, 2009' },
+    { src: '/images/wall-installation-04.jpg', caption: 'Wall Installation, 2009' },
+    { src: '/images/wall-installation-05.jpg', caption: 'Wall Installation, 2009' },
+    { src: '/images/wall-installation-06.jpg', caption: 'Wall Installation, 2009' },
+    { src: '/images/wall-installation-07.jpg', caption: 'Wall Installation, 2009' },
+    { src: '/images/wall-installation-08.jpg', caption: 'Wall Installation, 2009' }
+  ] },
   { slug: 'in-between', title: 'In Between 2006-2008', images: [
     { src: '/images/in-between-01.jpg', caption: 'Oil on canvas, 2006-2008' },
     { src: '/images/in-between-02.jpg', caption: 'Oil on canvas, 2006-2008' },
@@ -113,9 +167,42 @@ export const works: Work[] = [
     { src: '/images/in-between-11.jpg', caption: 'Oil on canvas, 2006-2008' },
     { src: '/images/in-between-12.jpg', caption: 'Oil on canvas, 2006-2008' }
   ] },
-  { slug: 'shield-of-the-mighty', title: 'Shield of the Mighty 2011 (paper)', images: [] },
-  { slug: 'quiet-island', title: 'Quiet Island - video 2012', images: [] },
-  { slug: 'private-investigations', title: 'Private Investigations 2004', images: [] },
+  { slug: 'shield-of-the-mighty', title: 'Shield of the Mighty 2011 (paper)', images: [
+    { src: '/images/shield-of-the-mighty-01.jpg', caption: 'Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011' },
+    { src: '/images/shield-of-the-mighty-02.jpg', caption: 'Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011' },
+    { src: '/images/shield-of-the-mighty-03.jpg', caption: 'Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011' },
+    { src: '/images/shield-of-the-mighty-04.jpg', caption: 'Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011' },
+    { src: '/images/shield-of-the-mighty-05.jpg', caption: 'Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011' },
+    { src: '/images/shield-of-the-mighty-06.jpg', caption: 'Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011' },
+    { src: '/images/shield-of-the-mighty-07.jpg', caption: 'Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011' },
+    { src: '/images/shield-of-the-mighty-08.jpg', caption: 'Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011' }
+  ] },
+  { slug: 'quiet-island', title: 'Quiet Island - video 2012', images: [
+    { src: '/images/quiet-island-01.jpg', caption: 'Quiet Island (Video Still), 2012' },
+    { src: '/images/quiet-island-02.jpg', caption: 'Quiet Island (Video Still), 2012' },
+    { src: '/images/quiet-island-03.jpg', caption: 'Quiet Island (Video Still), 2012' },
+    { src: '/images/quiet-island-04.jpg', caption: 'Quiet Island (Video Still), 2012' },
+    { src: '/images/quiet-island-05.jpg', caption: 'Quiet Island (Video Still), 2012' },
+    { src: '/images/quiet-island-06.jpg', caption: 'Quiet Island (Video Still), 2012' }
+  ] },
+  { slug: 'private-investigations', title: 'Private Investigations 2004', images: [
+    { src: '/images/private-investigations-01.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/private-investigations-02.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/private-investigations-03.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/private-investigations-04.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/private-investigations-05.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/private-investigations-06.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/private-investigations-07.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/private-investigations-08.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/private-investigations-09.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/private-investigations-10.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/private-investigations-11.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/private-investigations-12.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/private-investigations-13.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/private-investigations-14.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/private-investigations-15.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/private-investigations-16.jpg', caption: 'Charcoal on paper, 2004' }
+  ] },
 ];
 
 export const etcLinks = [

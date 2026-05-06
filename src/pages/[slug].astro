@@ -18,13 +18,15 @@ const { work } = Astro.props;
     
     <div class="gallery">
       {work.images.map((image) => (
-        <img 
-          src={image.src} 
-          alt={image.caption || work.title} 
-          data-caption={image.caption}
-          class="gallery-item"
-          loading="lazy"
-        />
+        <figure>
+          <img
+            src={image.src}
+            alt={image.caption || work.title}
+            data-caption={image.caption}
+            onclick="openLightbox(this)"
+            loading="lazy"
+          />
+        </figure>
       ))}
     </div>
   </main>
