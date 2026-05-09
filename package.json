@@ -9,8 +9,5 @@
   },
   "devDependencies": {
     "astro": "^6.2.2"
-  },
-  "dependencies": {
-    "astro-i18n": "^2.2.4"
   }
 }
