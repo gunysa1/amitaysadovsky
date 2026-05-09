@@ -40,6 +40,14 @@ export const news: NewsItem[] = [
     link: '/Glasshouse',
   },
   {
+    title: 'KimonoMatrix',
+    date: 'May 2019',
+    subtitle: 'Shenkar Exhibition at Wilfrid Israel Museum, Kibbutz Hazorea',
+    description: 'Student exhibition curated by Ella Amitay Sadovsky.',
+    image: '/images/kimono-matrix-01.jpg',
+    imageAlt: 'KimonoMatrix at Wilfrid Israel Museum',
+  },
+  {
     title: 'I to eye',
     date: 'Jun 2018 – Jun 2019',
     subtitle: 'Exhibition at Israel Museum, Jerusalem',
