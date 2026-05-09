@@ -24,6 +24,22 @@ export const news: NewsItem[] = [
     link: '/suddenly-just-when-you-thought-it-was-gone',
   },
   {
+    title: 'Without Leaving Home',
+    date: 'April – May 2024',
+    subtitle: 'Solo Exhibition at Gordon Gallery, Tel Aviv',
+    image: '/images/without-leaving-home-01.jpg',
+    imageAlt: 'Without Leaving Home',
+    link: '/Without-Leaving-Home',
+  },
+  {
+    title: 'Glasshouse',
+    date: '2019',
+    subtitle: 'Solo Exhibition at Gordon Gallery, Tel Aviv',
+    image: '/images/glasshouse-01.jpg',
+    imageAlt: 'Glasshouse',
+    link: '/Glasshouse',
+  },
+  {
     title: 'I to eye',
     date: 'Jun 2018 – Jun 2019',
     subtitle: 'Exhibition at Israel Museum, Jerusalem',
