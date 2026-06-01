@@ -479,7 +479,7 @@ main {
 
 @media (max-width: 480px) {
   .site-title { font-size: 16px; }
-  .site-title-he { display: none; }
+  .site-title-he { font-size: 18px; }
   .submenu { min-width: 160px; }
 }
 
