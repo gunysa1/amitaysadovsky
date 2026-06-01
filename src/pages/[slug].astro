@@ -35,6 +35,7 @@ const { work } = Astro.props;
             onclick="openLightbox(this)"
             loading="lazy"
           />
+          {image.caption && <figcaption>{image.caption}</figcaption>}
         </figure>
       ))}
     </div>

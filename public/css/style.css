@@ -282,6 +282,15 @@ main {
 }
 .gallery img:hover { opacity: 0.8; }
 
+.gallery figcaption {
+  font-size: 12px;
+  font-weight: 700;
+  color: #555;
+  margin-top: 8px;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 /* Lightbox Pop-out Overlay */
 .lightbox {
   display: none; /* Controlled by JS flex/none */
