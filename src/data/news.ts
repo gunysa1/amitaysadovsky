@@ -24,7 +24,7 @@ export const news: NewsItem[] = [
     link: '/suddenly-just-when-you-thought-it-was-gone',
   },
   {
-    title: 'Rishon LeZion 2025',
+    title: 'Untitled',
     date: '2025',
     subtitle: 'Solo Exhibition at Rishon LeZion Municipal Gallery',
     image: '/images/rishon-lezion-01.jpg',
