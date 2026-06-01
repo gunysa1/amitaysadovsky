@@ -224,7 +224,43 @@ main {
 .control-btn:hover { border-color: #4a90a4; color: #4a90a4; }
 
 /* ==========================================================================
-   4. INTERNAL PAGE COMPONENTS (GALLERIES & LIGHTBOX)
+   4. MEDIUM INDEX PAGES (VIDEO / CANVAS / PAPER)
+   ========================================================================== */
+.works-index {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 32px;
+  margin-top: 16px;
+}
+
+.work-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.work-card:hover .work-card-img { opacity: 0.85; }
+.work-card:hover .work-card-title { color: #4a90a4; }
+
+.work-card-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s;
+}
+
+.work-card-title {
+  font-size: 14px;
+  color: #444;
+  margin-top: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.5px;
+  transition: color 0.2s;
+}
+
+/* ==========================================================================
+   5. INTERNAL PAGE COMPONENTS (GALLERIES & LIGHTBOX)
    ========================================================================== */
 
 /* Gallery Grid */

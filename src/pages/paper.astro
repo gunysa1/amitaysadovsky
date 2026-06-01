@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { works } from '../data/works';
+const paperWorks = works.filter(w => w.medium === 'paper');
+---
+<BaseLayout title="Paper — Ella Amitay Sadovsky" currentPath="paper">
+  <main>
+    <h2 class="page-title">Paper</h2>
+    <div class="works-index">
+      {paperWorks.map(work => (
+        <a href={`/${work.slug}`} class="work-card">
+          <img class="work-card-img" src={work.images[0].src} alt={work.title} loading="lazy" />
+          <div class="work-card-title">{work.title}</div>
+        </a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>
