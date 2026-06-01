@@ -61,10 +61,24 @@ main {
 .site-title a { color: inherit; }
 .site-title a:hover { text-decoration: none; }
 
+.title-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.site-logo-link { display: flex; align-items: center; flex-shrink: 0; }
+.site-logo-link:hover { opacity: 0.75; }
+
+.site-logo {
+  height: 48px;
+  width: auto;
+}
+
 .site-title-he {
   font-family: Georgia, serif;
   color: #4a90a4;
-  font-size: 28px;
+  font-size: 33px;
   letter-spacing: 2px;
   direction: rtl;
 }
@@ -393,7 +407,21 @@ main {
 }
 
 /* ==========================================================================
-   8. HOME BACKGROUND SLIDESHOW
+   8. HOME PAGE
+   ========================================================================== */
+.home-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: url('/images/artist-portrait.jpg') center/cover no-repeat;
+}
+
+/* Old slideshow styles (kept in case re-used elsewhere) */
+/* ==========================================================================
+   8b. BACKGROUND SLIDESHOW (legacy)
    ========================================================================== */
 .bg-slideshow {
   position: fixed;
