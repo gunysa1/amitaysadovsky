@@ -439,7 +439,10 @@ main {
    7. FOOTER & SOCIAL
    ========================================================================== */
 .site-footer {
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
   padding: 20px 24px;
   border-top: 1px solid #eee;
   display: flex;
