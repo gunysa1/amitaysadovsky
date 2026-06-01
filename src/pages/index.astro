@@ -8,7 +8,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
   body {
     min-height: 100vh;
-    background: url('/images/artist-portrait.jpg') center / cover no-repeat;
+    background: url('/images/artist-portrait.jpg') center 30% / cover no-repeat;
+  }
+  @media (max-width: 768px) {
+    body {
+      background-position: center 55%;
+    }
   }
   .site-header {
     background: rgba(255, 255, 255, 0.82);
