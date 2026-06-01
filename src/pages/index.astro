@@ -1,53 +1,96 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Slideshow from '../components/Slideshow.astro';
 import { news } from '../data/news';
 
 const latestNews = news.slice(0, 3);
 
 const slideshowImages = [
-  'slideshow-01.jpg',
+  'suddenly-01.jpg',
+  'rishon-lezion-05.jpg',
+  'out-there-02.jpg',
+  'without-leaving-home-01.jpg',
+  'glasshouse-03.jpg',
+  '2018-05.jpg',
+  'seven-01.jpg',
+  'principle-of-uncertainty-01.jpeg',
+  'spare-parts-01.jpg',
+  'short-escape-01.jpg',
   'dreams-decipherer-01.jpg',
-  'slideshow-03.jpg',
-  'slideshow-04.jpg',
-  'slideshow-05.jpg',
-  '2018-20.jpg',
-  '2018-17.jpg',
-  '2018-19.jpg',
-  '2018-16.jpg',
-  '2018-01.jpg',
+  'wall-installation-01.jpg',
+  'in-between-01.jpg',
+  'shield-of-the-mighty-01.jpg',
+  'quiet-island-01.jpg',
+  'private-investigations-01.jpg',
 ];
 ---
+
+<style is:global>
+  body { background: #111; }
+  .site-header {
+    background: rgba(255, 255, 255, 0.93);
+    backdrop-filter: blur(6px);
+    position: relative;
+    z-index: 10;
+  }
+  .site-footer { display: none; }
+</style>
+
 <BaseLayout title="Home" currentPath="home">
-  <main>
-    <div class="home-grid">
-      <section class="news-col" aria-label="News">
-        <h2 class="page-title">News</h2>
 
-        {latestNews.map((item) => (
-          <article class="news-item">
-            <div class="news-content">
-              {item.dateColor && <div class="prize-category">{item.date}</div>}
-              <h3>
-                {item.link ? <a href={item.link} style="text-decoration: none; color: inherit;">{item.title}</a> : item.title}
-              </h3>
-              <div class="solo-show">{item.subtitle}</div>
-              {!item.dateColor && <div class="meta">{item.date}</div>}
-            </div>
-            {item.link ? (
-              <a href={item.link}>
-                <img src={item.image} alt={item.imageAlt} />
-              </a>
-            ) : (
-              <img src={item.image} alt={item.imageAlt} />
-            )}
-          </article>
-        ))}
-      </section>
+  <div class="bg-slideshow" id="slideshow">
+    {slideshowImages.map((src, i) => (
+      <img class={i === 0 ? 'active' : ''} src={`/images/${src}`} alt="" />
+    ))}
+  </div>
 
-      <section class="slideshow-section" aria-label="Selected works">
-        <Slideshow images={slideshowImages} />
-      </section>
-    </div>
-  </main>
+  <div class="bg-controls">
+    <button id="prevBtn" class="bg-ctrl">&#10094;</button>
+    <button id="playPauseBtn" class="bg-ctrl">&#9646;&#9646;</button>
+    <button id="nextBtn" class="bg-ctrl">&#10095;</button>
+  </div>
+
+  <div class="home-news-panel">
+    {latestNews.map((item) => (
+      <article class="home-news-item">
+        <div class="home-news-img">
+          {item.link
+            ? <a href={item.link}><img src={item.image} alt={item.imageAlt} /></a>
+            : <img src={item.image} alt={item.imageAlt} />}
+        </div>
+        <div class="home-news-text">
+          <div class="home-news-date">{item.date}</div>
+          <h3 class="home-news-title">
+            {item.link
+              ? <a href={item.link}>{item.title}</a>
+              : item.title}
+          </h3>
+          <div class="home-news-subtitle">{item.subtitle}</div>
+        </div>
+      </article>
+    ))}
+  </div>
+
+  <script is:inline>
+    (function() {
+      const slides = document.querySelectorAll('#slideshow img');
+      if (!slides.length) return;
+      let current = 0, playing = true, timer = null;
+      const show = (i) => {
+        slides[current].classList.remove('active');
+        current = (i + slides.length) % slides.length;
+        slides[current].classList.add('active');
+      };
+      const start = () => { timer = setInterval(() => show(current + 1), 4000); };
+      const stop  = () => { clearInterval(timer); };
+      document.getElementById('nextBtn').addEventListener('click', () => { show(current + 1); if (playing) { stop(); start(); } });
+      document.getElementById('prevBtn').addEventListener('click', () => { show(current - 1); if (playing) { stop(); start(); } });
+      document.getElementById('playPauseBtn').addEventListener('click', (e) => {
+        playing = !playing;
+        e.target.innerHTML = playing ? '&#9646;&#9646;' : '&#9654;';
+        if (playing) start(); else stop();
+      });
+      start();
+    })();
+  </script>
+
 </BaseLayout>

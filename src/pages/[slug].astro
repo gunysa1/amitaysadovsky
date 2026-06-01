@@ -15,7 +15,16 @@ const { work } = Astro.props;
 <BaseLayout title={work.title}>
   <main>
     <h2 class="page-title">{work.title}</h2>
-    
+
+    {work.video && (
+      <div style="margin-bottom: 40px;">
+        <iframe src={work.video} width="100%" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="display: block;" />
+      </div>
+    )}
+
+    {work.intro && <div class="prose" set:html={work.intro} />}
+    {work.intro_he && <div class="prose" dir="rtl" set:html={work.intro_he} />}
+
     <div class="gallery">
       {work.images.map((image) => (
         <figure>

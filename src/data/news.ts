@@ -24,6 +24,22 @@ export const news: NewsItem[] = [
     link: '/suddenly-just-when-you-thought-it-was-gone',
   },
   {
+    title: 'Rishon LeZion 2025',
+    date: '2025',
+    subtitle: 'Solo Exhibition at Rishon LeZion Municipal Gallery',
+    image: '/images/rishon-lezion-01.jpg',
+    imageAlt: 'Rishon LeZion Municipal Gallery',
+    link: '/rishon-lezion-2025',
+  },
+  {
+    title: 'Out There',
+    date: '2024',
+    subtitle: 'Solo Exhibition at Wilfrid Israel Museum, Kibbutz Hazorea',
+    image: '/images/out-there-01.jpg',
+    imageAlt: 'Out There, Wilfrid Israel Museum',
+    link: '/Out-There',
+  },
+  {
     title: 'Without Leaving Home',
     date: 'April – May 2024',
     subtitle: 'Solo Exhibition at Gordon Gallery, Tel Aviv',

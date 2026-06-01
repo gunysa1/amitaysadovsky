@@ -8,6 +8,9 @@ export type Work = {
   slug: string;
   title: string;
   title_he: string;
+  intro?: string;
+  intro_he?: string;
+  video?: string;
   images: WorkImage[];
 };
 
@@ -16,24 +19,90 @@ export const works: Work[] = [
     slug: 'suddenly-just-when-you-thought-it-was-gone',
     title: 'Suddenly, just when you thought it was gone 2025',
     title_he: 'פתאום, בדיוק כשחשבת שזה נעלם 2025',
+    video: 'https://www.youtube.com/embed/KfuCsLHAWKw',
+    intro: `<p><em>Curator: Neta Gal-Azmon</em><br>Mixed media on canvas and stop-motion animation, four channels, 9 min</p>
+<p>Ella Amitay Sadovsky's installation was realized using a technique new to her work, combining sound and video animation projected onto a surface of paintings. Composed of layered paintings through gluing and subtraction, at times interwoven with textiles, the collage, synonymous with her practice, is now enriched with additional, immaterial strata. For the first time, the animated projections serve as the sole source of light illuminating the paintings.</p>
+<p>The projected animation was crafted using stop-motion techniques, based on dolls made from painted cardboard cutouts, connected with joints that allow for movement. The figures were photographed frame by frame, edited into a sequence, and projected into a darkened space, conjuring the magic-lantern visions of childhood in the kibbutz. The soundtrack is perceived as an added layer, enveloping the scene, blending a cappella singing with choir singing from the archive of Kibbutz Gesher, where Amitay Sadovsky grew up.</p>
+<p>In her works, Amitay Sadovsky returns to foundational experiences etched in her childhood. The events of October 7, 2023 sparked a "return of the repressed," summoning early memories from the years of the War of Attrition. The border emerges in her work as the waterline of the Jordan River, separating the upper, illuminated part of the installation (life above ground) from the lower, dark section, where inner wars rage. During the War of Attrition, for three whole years, significant parts of her childhood were pushed underground, into the subterranean bomb shelter, far from sunlight.</p>
+<p>One of the figures appearing in the work is the artist's grandmother, Tsili Amitai, deputy commander of a forward post in Kibbutz Gesher during the War of Independence. When the Arab Legion and the Jordanian army invaded the Jordan Valley, Tsili Amitai was left alone in that post after all the other combatants around her had been either wounded or killed. A rescue team arrived nearly 24 hours later to find her still holding the line, alone. On the night of the attack, the kibbutz children were evacuated to a monastery in Haifa — among them Tsili's five-year-old son Amos, who walked the entire way barefoot after losing his shoes.</p>
+<p>The exhibition is based on archival research and personal testimonies from both the War of Independence and the War of Attrition. The title is drawn from the words of Haim Gouri: <em>"In this land, the past is always the most current thing — because it always comes back. And suddenly, just when you thought it was gone, it takes its revenge."</em></p>`,
+    intro_he: `<p><em>אוצרת: נטע גל־עצמון</em><br>טכניקה מעורבת על בד ואנימציית סטופ־מושן, ארבעה ערוצים, 09:30 דק׳</p>
+<p>מיצב זה של אלה אמיתי סדובסקי עשוי בטכניקה חדשה בעבודתה, המשלבת סאונד והקרנת וידיאו־אנימציה על מצע של ציורים. עבודת הקולאז' המזוהה עמה, המורכבת משכבות של ציור ולעתים גם טקסטיל, מתעבה כעת בשכבות נוספות שאינן חומר. לראשונה בעבודתה, הקרנות האנימציה הן מקור האור היחיד המאיר את הציורים.</p>
+<p>האנימציה המוקרנת נעשתה בשיטת "סטופ מושן", על בסיס בובות צבועות מגזירי קרטון עם מחברים המאפשרים את תנועתן. הדמויות מצולמות פריים אחר פריים, ערוכות ברצף ומוקרנות בחלל חשוך, באופן השולח אל חזיונות פנס הקסם הזכורים מבתי ילדים בקיבוצים.</p>
+<p>אחת הדמויות המופיעות בעבודה היא סבתה של האמנית, צילי אמיתי, סגנית מפקד עמדה קדמית בקיבוץ גשר בזמן מלחמת העצמאות. עם פלישת הלגיון הערבי וצבא ירדן לעמק הירדן, נשארה צילי אמיתי לבדה בעמדה הקדמית לאחר שכל שאר הלוחמים שלצדה נפצעו או נהרגו. כוח חילוץ שהגיע לעמדה כעבור כ־24 שעות מצא אותה מחזיקה בקו לבדה.</p>
+<p>שם התערוכה מצטט מדברי חיים גורי: <em>"בארץ הזו העבר הוא תמיד הדבר הכי אקטואלי, כי זה תמיד חוזר. ופתאום, כאשר חשבת שזה כבר איננו, זה נוקם את נקמתו."</em></p>`,
     images: [
-      { src: '/images/suddenly-01.jpg', caption: 'Installation view, 2025', caption_he: 'תצוגת התקנה, 2025' },
-      { src: '/images/suddenly-02.jpg', caption: 'Oil on canvas, 2025', caption_he: 'שמן על בד, 2025' },
-      { src: '/images/suddenly-03.jpg', caption: 'Oil on canvas, 2025', caption_he: 'שמן על בד, 2025' },
-      { src: '/images/suddenly-04.jpg', caption: 'Oil on canvas, 2025', caption_he: 'שמן על בד, 2025' },
-      { src: '/images/suddenly-05.webp', caption: 'Stop-motion animation still, 2025', caption_he: 'סטיל אנימציה stop-motion, 2025' },
-      { src: '/images/suddenly-06.jpg', caption: 'Oil on canvas, 2025', caption_he: 'שמן על בד, 2025' },
-      { src: '/images/suddenly-07.jpg', caption: 'Oil on canvas, 2025', caption_he: 'שמן על בד, 2025' },
-      { src: '/images/suddenly-08.jpg', caption: 'Oil on canvas, 2025', caption_he: 'שמן על בד, 2025' },
-      { src: '/images/suddenly-09.jpg', caption: 'Oil on canvas, 2025', caption_he: 'שמן על בד, 2025' },
-      { src: '/images/suddenly-10.jpg', caption: 'Oil on canvas, 2025', caption_he: 'שמן על בד, 2025' },
-      { src: '/images/suddenly-11.jpg', caption: 'Oil on canvas, 2025', caption_he: 'שמן על בד, 2025' },
-      { src: '/images/suddenly-12.jpg', caption: 'Oil on canvas, 2025', caption_he: 'שמן על בד, 2025' },
-      { src: '/images/suddenly-13.jpg', caption: 'Oil on canvas, 2025', caption_he: 'שמן על בד, 2025' },
-      { src: '/images/suddenly-14.jpg', caption: 'Oil on canvas, 2025', caption_he: 'שמן על בד, 2025' },
-      { src: '/images/suddenly-15.jpg', caption: 'Oil on canvas, 2025', caption_he: 'שמן על בד, 2025' },
-      { src: '/images/suddenly-16.jpg', caption: 'Oil on canvas, 2025', caption_he: 'שמן על בד, 2025' },
-      { src: '/images/suddenly-17.webp', caption: 'Documentation, 2025', caption_he: 'תיעוד, 2025' }
+      { src: '/images/suddenly-01.jpg', caption: 'Oil on Canvas, 2025' },
+      { src: '/images/suddenly-02.jpg', caption: 'Oil on Canvas, 2025' },
+      { src: '/images/suddenly-03.jpg', caption: 'Oil on Canvas, 2025' },
+      { src: '/images/suddenly-04.jpg', caption: 'Oil on Canvas, 2025' },
+      { src: '/images/suddenly-05.jpg', caption: 'Oil on Canvas, 2025' },
+      { src: '/images/suddenly-06.jpg', caption: 'Oil on Canvas, 2025' },
+      { src: '/images/suddenly-07.jpg', caption: 'Oil on Canvas, 2025' },
+      { src: '/images/suddenly-08.jpg', caption: 'Installation detail, 2025' },
+      { src: '/images/suddenly-09.jpg', caption: 'Installation detail, 2025' },
+      { src: '/images/suddenly-10.jpg', caption: 'Installation detail, 2025' },
+      { src: '/images/suddenly-11.jpg', caption: 'Installation detail, 2025' },
+      { src: '/images/suddenly-12.jpg', caption: 'Installation detail, 2025' },
+      { src: '/images/suddenly-13.jpg', caption: 'Installation detail, 2025' }
+    ]
+  },
+  {
+    slug: 'rishon-lezion-2025',
+    title: 'Rishon LeZion 2025',
+    title_he: 'ראשון לציון 2025',
+    intro_he: `<p><em>טקסט: אפי גן</em></p>
+<p>עבודות הקולאז' של אלה אמיתי סדובסקי מייצרות חוויה מורכבת הנעה בין מציאות לדמיון, בין זיכרון אישי לקולקטיבי ובין אסתטיקה לאי נוחות. היפה והמאיימים, הממשי והמדומיין, מתקיימים בעת ובעונה אחת: בית ומשפחה, לידה, אינטימיות וזוגיות, לצד תחושות נטישה, איום, אובדן וחרדה.</p>
+<p>הקולאז'ים נשענים על בדי ה־Toile de Jouy אשר הפכו במשך 300 השנים האחרונות לנכס צאן ברזל עיצובי בכל העולם וכוננו חלק מ'יסודות הטעם האירופי'. עצם השימוש בבדים הללו כבסיס לעבודות הקולאז' מחבר סיפור אל סיפור ואת הסיפורים הקטנים המוכרים שהודפסו על הבדים אל הסיפורים האישיים של היוצרת.</p>
+<p>הכשרתה האמנותית של אלה כוללת תארים מתקדמים באמנות מהארץ ומחו"ל לצד רקע אקדמי במדעים (דוקטורט במכון ויצמן ופוסט־דוקטורט באוניברסיטת ברקלי). השילוב בין מדע לאמנות ניכר באופן שבו היא מתייחסת לחומר כמרכיב מהותי ביצירה.</p>
+<p>אלה חוקרת את המתח שבין יופי לעקרות, בין דקורטיביות מרהיבה לבין חוסר חיות, ויוצרת אמירה על מציאות עכשווית ועל המרחב הביתי כזירה טעונה רגשית ופוליטית. הקולאז'ים מוציאים אותנו למסע, לא אל טבע ממשי, אלא אל ייצוגים מלאכותיים עשויים טפט, נייר ובד.</p>`,
+    images: [
+      { src: '/images/rishon-lezion-01.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-02.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-03.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-04.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-05.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-06.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-07.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-08.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-09.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-10.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-11.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-12.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-13.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-14.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-15.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-16.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-17.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-18.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-19.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-20.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-21.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/rishon-lezion-22.jpg', caption: 'Installation view, 2025' }
+    ]
+  },
+  {
+    slug: 'Out-There',
+    title: 'Out There 2024',
+    title_he: 'אי שם 2024',
+    intro: `<p><em>Text: Shir Meller-Yamaguchi</em></p>
+<p>Like Scheherazade in <em>One Thousand and One Nights</em>, in this exhibition Ella Amitay Sadovsky assumes the role of a storyteller, unfolding absurd fictional tales with no beginning or end. Like the Arabian/Eastern folktales, and like life itself, these intertwine multiple and even contradictory narratives, alternating between a contemplative and amused tone.</p>
+<p>In her previous works, Amitay Sadovsky shifted between large-scale paintings that combine colorful textures and painting animation installations, mostly of the family and domestic space. Her characteristic collagist painting language sets a multilayered ambivalence and relativism as the starting point for observation. Here, for the first time Amitay Sadovsky presents animated scenes on large painted screens that draw inspiration from Indian miniatures, transforming their flat decorativeness into fantastical landscapes. These serve as backdrop for animated scenes, where paper cutouts of figures and animals come alive with their projection on the painting.</p>
+<p>The cutouts serve her as a conceptual and theatrical means. They are doomed to move through the cycles of Saṃsāra — human suffering, towards Nirvana — the freedom from pain. The desert and the sea are referenced in all acts, suggesting a familiar yet fictional eastern landscape.</p>
+<p>In the first act, <em>Under the Sun</em>, the top half depicting an arid abandoned village is contrasted with the surreal drama that unfolds below it. In the second act, <em>One by One</em>, women seem frozen still on a carpet/platform that miraculously hovers above the sea. The last act, <em>Unto the Place from Whence the Rivers Come</em>, presents an idyllic landscape where swimmers go round and round in an infinite motion, swimming alongside fish that alternately swallow and spit them out.</p>
+<p>In the words of the Koheleth (Ecclesiastes 1:2–14): <em>"Vanity of vanities; all is vanity […] One generation passeth away, and another generation cometh: but the earth abideth for ever. […] I have seen all the works that are done under the sun; and, behold, all is vanity and vexation of spirit."</em></p>`,
+    images: [
+      { src: '/images/out-there-01.jpg', caption: 'Installation view, Wilfrid Israel Museum, 2024' },
+      { src: '/images/out-there-02.jpg', caption: 'Installation view, Wilfrid Israel Museum, 2024' },
+      { src: '/images/out-there-03.jpg', caption: 'Installation view, Wilfrid Israel Museum, 2024' },
+      { src: '/images/out-there-04.jpg', caption: 'Installation view, Wilfrid Israel Museum, 2024' },
+      { src: '/images/out-there-05.jpg', caption: 'Installation view, Wilfrid Israel Museum, 2024' },
+      { src: '/images/out-there-06.jpg', caption: 'Installation view, Wilfrid Israel Museum, 2024' },
+      { src: '/images/out-there-07.jpg', caption: 'Installation view, Wilfrid Israel Museum, 2024' },
+      { src: '/images/out-there-08.jpg', caption: 'Installation view, Wilfrid Israel Museum, 2024' },
+      { src: '/images/out-there-09.jpg', caption: 'Installation view, Wilfrid Israel Museum, 2024' },
+      { src: '/images/out-there-10.jpg', caption: 'Out There, 2024' },
+      { src: '/images/out-there-11.jpg', caption: 'Out There, 2024' }
     ]
   },
   {
@@ -41,17 +110,18 @@ export const works: Work[] = [
     title: 'Without Leaving Home 2024',
     title_he: 'בלי לעזוב את הבית 2024',
     images: [
-      { src: '/images/without-leaving-home-01.jpg', caption: 'Oil on Canvas, 2024', caption_he: 'שמן על בד, 2024' },
-      { src: '/images/without-leaving-home-02.jpg', caption: 'Green Sofa and Toile, 2023, Oil and Fabric on Canvas, 215x150 cm', caption_he: 'ספה ירוקה וטואיל, 2023, שמן וטקסטיל על בד, 215x150 ס"מ' },
-      { src: '/images/without-leaving-home-03.jpg', caption: 'Untitled (A Couple on a Boat), 2023, Oil on Torn Fabric Mounted on Canvas, 215x150 cm', caption_he: 'ללא כותרת (זוג בסירה), 2023, שמן על טקסטיל קרוע על בד, 215x150 ס"מ' },
-      { src: '/images/without-leaving-home-04.jpg', caption: 'Untitled 4, 2022, Oil on Canvas, 100x160 cm', caption_he: 'ללא כותרת 4, 2022, שמן על בד, 100x160 ס"מ' },
-      { src: '/images/without-leaving-home-05.jpg', caption: 'Untitled 5, 2022, Oil on Canvas, 100x160 cm', caption_he: 'ללא כותרת 5, 2022, שמן על בד, 100x160 ס"מ' },
-      { src: '/images/without-leaving-home-06.jpg', caption: 'Landscape 2, 2021, Oil on Canvas, 135x400 cm', caption_he: 'נוף 2, 2021, שמן על בד, 135x400 ס"מ' },
-      { src: '/images/without-leaving-home-07.jpg', caption: 'Landscape 3, 2021, Oil on Canvas, 135x400 cm', caption_he: 'נוף 3, 2021, שמן על בד, 135x400 ס"מ' },
-      { src: '/images/without-leaving-home-08.jpg', caption: 'Landscape 4, 2021, Oil on Canvas, 135x400 cm', caption_he: 'נוף 4, 2021, שמן על בד, 135x400 ס"מ' },
-      { src: '/images/without-leaving-home-09.jpg', caption: 'Untitled (In The Shower), 2023, Oil and Acrylic on Canvas, 92x148 cm', caption_he: 'ללא כותרת (בשירותים), 2023, שמן וקריליק על בד, 92x148 ס"מ' },
-      { src: '/images/without-leaving-home-10.jpg', caption: 'Landscape 1, 2021, Oil on Canvas, 135x400 cm', caption_he: 'נוף 1, 2021, שמן על בד, 135x400 ס"מ' },
-      { src: '/images/without-leaving-home-11.jpg', caption: 'Untitled (Still Life With Peels in the Dark), 2024, Oil on Canvas, 99x78 cm', caption_he: 'ללא כותרת (חיים דוממים עם קליפות בחושך), 2024, שמן על בד, 99x78 ס"מ' }
+      { src: '/images/without-leaving-home-01.jpg', caption: 'Green Sofa and Toile, Oil and Fabric on Canvas, 2024' },
+      { src: '/images/without-leaving-home-02.jpg', caption: 'Diptych 1, Oil on Canvas, 2024' },
+      { src: '/images/without-leaving-home-03.jpg', caption: 'Diptych 2, Oil on Canvas, 2024' },
+      { src: '/images/without-leaving-home-04.jpg', caption: 'Diptych 3, Oil on Canvas, 2024' },
+      { src: '/images/without-leaving-home-05.jpg', caption: 'Diptych 4, Oil on Canvas, 2024' },
+      { src: '/images/without-leaving-home-06.jpg', caption: 'Diptych 7, Oil on Canvas, 2024' },
+      { src: '/images/without-leaving-home-07.jpg', caption: 'Couple Through Trees, Oil on Canvas, 2024' },
+      { src: '/images/without-leaving-home-08.jpg', caption: 'Landscape (4m), Oil on Canvas, 2024' },
+      { src: '/images/without-leaving-home-09.jpg', caption: 'Flower Arrangement 3, Oil on Canvas, 2024' },
+      { src: '/images/without-leaving-home-10.jpg', caption: 'Boat at Sea, Landscape (1–4m), Oil on Canvas, 2024' },
+      { src: '/images/without-leaving-home-11.jpg', caption: 'In the Forest, Landscape (2–4m), Oil on Canvas, 2024' },
+      { src: '/images/without-leaving-home-12.jpg', caption: 'Landscape (4m) 3, Oil on Canvas, 2024' }
     ]
   },
   { slug: 'Glasshouse', title: 'Glasshouse 2019', title_he: 'בית הזכוכית 2019', images: [
