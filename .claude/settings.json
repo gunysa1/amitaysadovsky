@@ -37,7 +37,8 @@
       "PowerShell(Remove-Item *)",
       "PowerShell(Copy-Item *)",
       "PowerShell(Move-Item *)",
-      "PowerShell(git *)"
+      "PowerShell(git *)",
+      "PowerShell(Stop-Process -Name \"node\" -ErrorAction SilentlyContinue)"
     ],
     "deny": [
       "Bash(rm -rf /:*)",
