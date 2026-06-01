@@ -8,6 +8,7 @@ export type Work = {
   slug: string;
   title: string;
   title_he: string;
+  medium: 'video' | 'canvas' | 'paper';
   intro?: string;
   intro_he?: string;
   video?: string;
@@ -17,6 +18,7 @@ export type Work = {
 export const works: Work[] = [
   {
     slug: 'suddenly-just-when-you-thought-it-was-gone',
+    medium: 'video',
     title: 'Suddenly, just when you thought it was gone 2025',
     title_he: 'פתאום, בדיוק כשחשבת שזה נעלם 2025',
     video: 'https://www.youtube.com/embed/KfuCsLHAWKw',
@@ -49,6 +51,7 @@ export const works: Work[] = [
   },
   {
     slug: 'rishon-lezion-2025',
+    medium: 'canvas',
     title: 'Untitled 2025',
     title_he: 'ללא כותרת 2025',
     intro_he: `<p><em>טקסט: אפי גן</em></p>
@@ -83,6 +86,7 @@ export const works: Work[] = [
   },
   {
     slug: 'Out-There',
+    medium: 'video',
     title: 'Out There 2024',
     title_he: 'אי שם 2024',
     intro: `<p><em>Text: Shir Meller-Yamaguchi</em></p>
@@ -107,6 +111,7 @@ export const works: Work[] = [
   },
   {
     slug: 'Without-Leaving-Home',
+    medium: 'canvas',
     title: 'Without Leaving Home 2024',
     title_he: 'בלי לעזוב את הבית 2024',
     images: [
@@ -124,7 +129,8 @@ export const works: Work[] = [
       { src: '/images/without-leaving-home-12.jpg', caption: 'Landscape (4m) 3, Oil on Canvas, 2024' }
     ]
   },
-  { slug: 'Glasshouse', title: 'Glasshouse 2019', title_he: 'בית הזכוכית 2019', images: [
+  { slug: 'Glasshouse',
+    medium: 'canvas', title: 'Glasshouse 2019', title_he: 'בית הזכוכית 2019', images: [
     { src: '/images/glasshouse-01.jpg', caption: 'Green painting from Berkeley, bed and yellow lemons, Oil, Acrylic and Fabric Collage on Canvas, 165x200 cm, 2019' },
     { src: '/images/glasshouse-02.jpg', caption: 'Piano and chair with white cover, watch and blue butterfly lamp, Oil, Acrylic and Fabric Collage on Canvas, 165x200 cm, 2019' },
     { src: '/images/glasshouse-03.jpg', caption: 'Red sofa, yellow pot and Sara in a white dress, Oil, Acrylic and Fabric Collage on Canvas, 165x200 cm, 2019' },
@@ -132,7 +138,8 @@ export const works: Work[] = [
     { src: '/images/glasshouse-05.jpg', caption: 'Attic in Pan, Galila and Mud River, Oil, Acrylic and Fabric Collage on Canvas, 175x155 cm, 2019' },
     { src: '/images/glasshouse-06.jpg', caption: 'Pan\'s Cottage, Oil, Acrylic and Fabric Collage on Canvas, 200x155 cm, 2019' }
   ] },
-  { slug: '2018', title: '2018', title_he: '2018', images: [
+  { slug: '2018',
+    medium: 'canvas', title: '2018', title_he: '2018', images: [
     { src: '/images/2018-01.jpg', caption: 'Oil on Canvas, 2018' },
     { src: '/images/2018-02.jpg', caption: 'Oil on Canvas, 2018' },
     { src: '/images/2018-03.jpg', caption: 'Oil on Canvas, 2018' },
@@ -155,7 +162,8 @@ export const works: Work[] = [
     { src: '/images/2018-20.jpg', caption: 'Oil on Canvas, 2018' },
     { src: '/images/2018-21.jpg', caption: 'Oil on Canvas, 2018' }
   ] },
-  { slug: 'seven', title: 'Seven 2016', title_he: 'שבע 2016', images: [
+  { slug: 'seven',
+    medium: 'video', title: 'Seven 2016', title_he: 'שבע 2016', images: [
     { src: '/images/seven-01.jpg', caption: 'Seven (Video Installation Still), 2016' },
     { src: '/images/seven-02.jpg', caption: 'Seven (Video Installation Still), 2016' },
     { src: '/images/seven-03.jpg', caption: 'Seven (Video Installation Still), 2016' },
@@ -169,7 +177,8 @@ export const works: Work[] = [
     { src: '/images/seven-11.jpg', caption: 'Seven (Video Installation Still), 2016' },
     { src: '/images/seven-12.jpg', caption: 'Seven (Video Installation Still), 2016' }
   ] },
-  { slug: 'Principle-of-Uncertainty', title: 'Principle of Uncertainty 2015', title_he: 'עקרון אי-הודעה 2015', images: [
+  { slug: 'Principle-of-Uncertainty',
+    medium: 'canvas', title: 'Principle of Uncertainty 2015', title_he: 'עקרון אי-הודעה 2015', images: [
     { src: '/images/principle-of-uncertainty-01.jpeg', caption: 'Certainty and Clemente, oil, acrylic and fabric collage on canvas, 206x166 cm, 2014' },
     { src: '/images/principle-of-uncertainty-02.jpeg', caption: 'Yes or No, oil on canvas, 175x200 cm, 2014' },
     { src: '/images/principle-of-uncertainty-03.jpeg', caption: 'Slave and J. Bathe in George Washington\'s Bathtub, oil, acrylic and collage of fabrics on canvas, 200x165 cm, 2014' },
@@ -183,7 +192,8 @@ export const works: Work[] = [
     { src: '/images/principle-of-uncertainty-11.jpeg', caption: 'The Continuum Concept, oil on canvas, 175x175 cm, 2013' },
     { src: '/images/principle-of-uncertainty-12.jpeg', caption: 'Mother, Rooster and Egg, oil on canvas, 112x175 cm, 2011' }
   ] },
-  { slug: 'spare-parts', title: 'Spare Parts 2014-2015', title_he: 'חלקי חילוף 2014-2015', images: [
+  { slug: 'spare-parts',
+    medium: 'canvas', title: 'Spare Parts 2014-2015', title_he: 'חלקי חילוף 2014-2015', images: [
     { src: '/images/spare-parts-01.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
     { src: '/images/spare-parts-02.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
     { src: '/images/spare-parts-03.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
@@ -199,12 +209,14 @@ export const works: Work[] = [
     { src: '/images/spare-parts-13.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
     { src: '/images/spare-parts-14.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' }
   ] },
-  { slug: 'short-escape', title: 'Short Escape 2011-2013', title_he: 'בריחה קצרה 2011-2013', images: [
+  { slug: 'short-escape',
+    medium: 'canvas', title: 'Short Escape 2011-2013', title_he: 'בריחה קצרה 2011-2013', images: [
     { src: '/images/short-escape-01.jpg', caption: 'Short Escape, Oil, acrylic and fabric collage on canvas, 2012' },
     { src: '/images/short-escape-02.jpg', caption: 'Short Escape, Oil, acrylic and fabric collage on canvas, 2012' },
     { src: '/images/short-escape-03.jpg', caption: 'Short Escape, Oil, acrylic and fabric collage on canvas, 2012' }
   ] },
-  { slug: 'dreams-decipherer', title: 'Dreams Decipherer 2010', title_he: 'מפענח חלומות 2010', images: [
+  { slug: 'dreams-decipherer',
+    medium: 'canvas', title: 'Dreams Decipherer 2010', title_he: 'מפענח חלומות 2010', images: [
     { src: '/images/dreams-decipherer-01.jpg', caption: 'Flower Arrangement, Oil, polymer and pigment on fabric, 215x174 cm, 2010' },
     { src: '/images/dreams-decipherer-02.jpg', caption: 'Everlasting Tenure in the Region of Measure, Oil, polymer and pigment on fabric, 215x139 cm, 2010' },
     { src: '/images/dreams-decipherer-03.jpg', caption: 'In Another Place and Time, Oil, polymer and pigment on fabric, 215x123.5 cm, 2010' },
@@ -217,7 +229,8 @@ export const works: Work[] = [
     { src: '/images/dreams-decipherer-10.jpg', caption: 'Roman, Turkish and the One for the Train, Oil, polymer, acrylic and pigment on fabric, 63.5x64 cm, 2008' },
     { src: '/images/dreams-decipherer-11.jpg', caption: 'Untitled (Diptych), Oil and acrylic on canvas, 100x90 cm, 2008' }
   ] },
-  { slug: 'wall-installation', title: 'Wall Installation 2009', title_he: 'התקנה על קיר 2009', images: [
+  { slug: 'wall-installation',
+    medium: 'canvas', title: 'Wall Installation 2009', title_he: 'התקנה על קיר 2009', images: [
     { src: '/images/wall-installation-01.jpg', caption: 'Wall Installation, 2009' },
     { src: '/images/wall-installation-02.jpg', caption: 'Wall Installation, 2009' },
     { src: '/images/wall-installation-03.jpg', caption: 'Wall Installation, 2009' },
@@ -227,7 +240,8 @@ export const works: Work[] = [
     { src: '/images/wall-installation-07.jpg', caption: 'Wall Installation, 2009' },
     { src: '/images/wall-installation-08.jpg', caption: 'Wall Installation, 2009' }
   ] },
-  { slug: 'in-between', title: 'In Between 2006-2008', title_he: 'בעניין 2006-2008', images: [
+  { slug: 'in-between',
+    medium: 'canvas', title: 'In Between 2006-2008', title_he: 'בעניין 2006-2008', images: [
     { src: '/images/in-between-01.jpg', caption: 'Oil on canvas, 2006-2008' },
     { src: '/images/in-between-02.jpg', caption: 'Oil on canvas, 2006-2008' },
     { src: '/images/in-between-03.jpg', caption: 'Oil on canvas, 2006-2008' },
@@ -241,7 +255,8 @@ export const works: Work[] = [
     { src: '/images/in-between-11.jpg', caption: 'Oil on canvas, 2006-2008' },
     { src: '/images/in-between-12.jpg', caption: 'Oil on canvas, 2006-2008' }
   ] },
-  { slug: 'shield-of-the-mighty', title: 'Shield of the Mighty 2011 (paper)', title_he: 'מגן הגיבורים 2011 (נייר)', images: [
+  { slug: 'shield-of-the-mighty',
+    medium: 'paper', title: 'Shield of the Mighty 2011 (paper)', title_he: 'מגן הגיבורים 2011 (נייר)', images: [
     { src: '/images/shield-of-the-mighty-01.jpg', caption: 'Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011' },
     { src: '/images/shield-of-the-mighty-02.jpg', caption: 'Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011' },
     { src: '/images/shield-of-the-mighty-03.jpg', caption: 'Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011' },
@@ -251,7 +266,8 @@ export const works: Work[] = [
     { src: '/images/shield-of-the-mighty-07.jpg', caption: 'Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011' },
     { src: '/images/shield-of-the-mighty-08.jpg', caption: 'Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011' }
   ] },
-  { slug: 'quiet-island', title: 'Quiet Island - video 2012', title_he: 'אי שקט - וידאו 2012', images: [
+  { slug: 'quiet-island',
+    medium: 'video', title: 'Quiet Island - video 2012', title_he: 'אי שקט - וידאו 2012', images: [
     { src: '/images/quiet-island-01.jpg', caption: 'Quiet Island (Video Still), 2012' },
     { src: '/images/quiet-island-02.jpg', caption: 'Quiet Island (Video Still), 2012' },
     { src: '/images/quiet-island-03.jpg', caption: 'Quiet Island (Video Still), 2012' },
@@ -259,7 +275,8 @@ export const works: Work[] = [
     { src: '/images/quiet-island-05.jpg', caption: 'Quiet Island (Video Still), 2012' },
     { src: '/images/quiet-island-06.jpg', caption: 'Quiet Island (Video Still), 2012' }
   ] },
-  { slug: 'private-investigations', title: 'Private Investigations 2004', title_he: 'חקירות פרטיות 2004', images: [
+  { slug: 'private-investigations',
+    medium: 'paper', title: 'Private Investigations 2004', title_he: 'חקירות פרטיות 2004', images: [
     { src: '/images/private-investigations-01.jpg', caption: 'Charcoal on paper, 2004' },
     { src: '/images/private-investigations-02.jpg', caption: 'Charcoal on paper, 2004' },
     { src: '/images/private-investigations-03.jpg', caption: 'Charcoal on paper, 2004' },

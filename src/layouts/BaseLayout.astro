@@ -1,6 +1,9 @@
 ---
 import { works, etcLinks } from '../data/works';
 const { title, currentPath } = Astro.props;
+const videoWorks  = works.filter(w => w.medium === 'video');
+const canvasWorks = works.filter(w => w.medium === 'canvas');
+const paperWorks  = works.filter(w => w.medium === 'paper');
 ---
 
 <html lang="en">
@@ -38,9 +41,25 @@ const { title, currentPath } = Astro.props;
         <ul>
           <li><a href="/" class={currentPath === 'home' ? 'active' : ''}>Home</a></li>
           <li class="has-sub">
-            <a href="#" aria-haspopup="true">Works</a>
+            <a href="#" aria-haspopup="true">Video</a>
             <ul class="submenu">
-              {works.map((work) => (
+              {videoWorks.map((work) => (
+                <li><a href={`/${work.slug}`}>{work.title}</a></li>
+              ))}
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="#" aria-haspopup="true">Canvas</a>
+            <ul class="submenu">
+              {canvasWorks.map((work) => (
+                <li><a href={`/${work.slug}`}>{work.title}</a></li>
+              ))}
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="#" aria-haspopup="true">Paper</a>
+            <ul class="submenu">
+              {paperWorks.map((work) => (
                 <li><a href={`/${work.slug}`}>{work.title}</a></li>
               ))}
             </ul>
