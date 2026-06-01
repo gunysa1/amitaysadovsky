@@ -43,7 +43,10 @@ const { title, currentPath } = Astro.props;
     <slot />
 
     <footer class="site-footer">
-      <div class="footer-left">© Ella Amitay Sadovsky</div>
+      <div class="footer-blurb">
+        <strong>Ella Amitay Sadovsky</strong>, Artist<br>
+        <span class="footer-copy">© {new Date().getFullYear()} Ella Amitay Sadovsky. All rights reserved.</span>
+      </div>
 
       <div class="social">
         <a href="https://www.facebook.com/amitaysadovsky" aria-label="Facebook" target="_blank" rel="noopener">
@@ -54,7 +57,7 @@ const { title, currentPath } = Astro.props;
         </a>
       </div>
 
-      <div class="footer-right">אלה אמיתי סדובסקי ©</div>
+      <div class="footer-he">אלה אמיתי סדובסקי, אמנית</div>
     </footer>
 
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">

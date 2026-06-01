@@ -428,15 +428,36 @@ main {
    7. FOOTER & SOCIAL
    ========================================================================== */
 .site-footer {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 24px;
+  width: 100%;
+  padding: 20px 24px;
   border-top: 1px solid #eee;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: #999;
   font-size: 13px;
+  gap: 16px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.footer-blurb {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.footer-blurb strong { color: #444; }
+
+.footer-copy {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.footer-he {
+  direction: rtl;
+  font-size: 13px;
+  color: #999;
 }
 
 .social { display: flex; gap: 16px; align-items: center; }
