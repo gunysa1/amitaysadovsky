@@ -3,23 +3,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <style is:global>
-  body { background: #111; }
-  .site-header {
-    background: transparent;
-    backdrop-filter: none;
+  body {
+    background: url('/images/artist-portrait.jpg') center / cover no-repeat fixed;
   }
   .site-title a,
   .site-title-he,
   .site-nav a { color: rgba(255,255,255,0.9); }
   .site-nav a:hover,
   .site-nav a.active { color: #fff; }
-  .site-logo path,
   .site-logo line,
-  .site-logo polyline { stroke: rgba(255,255,255,0.9); }
+  .site-logo polyline,
+  .site-logo path { stroke: rgba(255,255,255,0.9); }
   .site-nav { border-top-color: rgba(255,255,255,0.2); border-bottom-color: rgba(255,255,255,0.2); }
   .site-footer { display: none; }
 </style>
 
 <BaseLayout title="Ella Amitay Sadovsky" currentPath="home">
-  <div class="home-bg"></div>
 </BaseLayout>
