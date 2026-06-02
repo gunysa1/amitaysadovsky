@@ -164,18 +164,16 @@ export const works: Work[] = [
   ] },
   { slug: 'seven',
     medium: 'video', title: 'Seven 2016', title_he: 'שבע 2016', images: [
-    { src: '/images/seven-01.jpg', caption: 'Seven (Video Installation Still), 2016' },
-    { src: '/images/seven-02.jpg', caption: 'Seven (Video Installation Still), 2016' },
-    { src: '/images/seven-03.jpg', caption: 'Seven (Video Installation Still), 2016' },
-    { src: '/images/seven-04.jpg', caption: 'Seven (Video Installation Still), 2016' },
-    { src: '/images/seven-05.jpg', caption: 'Seven (Video Installation Still), 2016' },
-    { src: '/images/seven-06.jpg', caption: 'Seven (Video Installation Still), 2016' },
-    { src: '/images/seven-07.jpg', caption: 'Seven (Video Installation Still), 2016' },
-    { src: '/images/seven-08.jpg', caption: 'Seven (Video Installation Still), 2016' },
-    { src: '/images/seven-09.jpg', caption: 'Seven (Video Installation Still), 2016' },
-    { src: '/images/seven-10.jpg', caption: 'Seven (Video Installation Still), 2016' },
-    { src: '/images/seven-11.jpg', caption: 'Seven (Video Installation Still), 2016' },
-    { src: '/images/seven-12.jpg', caption: 'Seven (Video Installation Still), 2016' }
+    { src: '/images/seven-01.jpg', caption: 'Seven (Installation View), 2016' },
+    { src: '/images/seven-02.jpg', caption: 'Seven (Installation View), 2016' },
+    { src: '/images/seven-03.jpg', caption: 'Seven (Installation View), 2016' },
+    { src: '/images/seven-04.jpg', caption: 'Seven (Installation View), 2016' },
+    { src: '/images/seven-05.jpg', caption: 'Seven (Installation View), 2016' },
+    { src: '/images/seven-06.jpg', caption: 'Seven (Installation View), 2016' },
+    { src: '/images/seven-07.jpg', caption: 'Seven (Installation View), 2016' },
+    { src: '/images/seven-08.jpg', caption: 'Seven (Installation View), 2016' },
+    { src: '/images/seven-09.jpg', caption: 'Seven (Installation View), 2016' },
+    { src: '/images/seven-10.jpg', caption: 'Seven (Installation View), 2016' }
   ] },
   { slug: 'Principle-of-Uncertainty',
     medium: 'canvas', title: 'Principle of Uncertainty 2015', title_he: 'עקרון אי-הודעה 2015', images: [
@@ -270,12 +268,17 @@ export const works: Work[] = [
     medium: 'video', title: 'Quiet Island - video 2012', title_he: 'אי שקט - וידאו 2012',
     video: 'https://player.vimeo.com/video/103327177',
     images: [
-    { src: '/images/quiet-island-01.jpg', caption: 'Quiet Island (Video Still), 2012' },
-    { src: '/images/quiet-island-02.jpg', caption: 'Quiet Island (Video Still), 2012' },
-    { src: '/images/quiet-island-03.jpg', caption: 'Quiet Island (Video Still), 2012' },
-    { src: '/images/quiet-island-04.jpg', caption: 'Quiet Island (Video Still), 2012' },
-    { src: '/images/quiet-island-05.jpg', caption: 'Quiet Island (Video Still), 2012' },
-    { src: '/images/quiet-island-06.jpg', caption: 'Quiet Island (Video Still), 2012' }
+    { src: '/images/quiet-island-01.jpg', caption: 'Quiet Island, 2012' },
+    { src: '/images/quiet-island-02.jpg', caption: 'Quiet Island, 2012' },
+    { src: '/images/quiet-island-03.jpg', caption: 'Quiet Island, 2012' },
+    { src: '/images/quiet-island-04.jpg', caption: 'Quiet Island, 2012' },
+    { src: '/images/quiet-island-05.jpg', caption: 'Quiet Island, 2012' },
+    { src: '/images/quiet-island-06.jpg', caption: 'Quiet Island, 2012' },
+    { src: '/images/quiet-island-07.jpg', caption: 'Quiet Island, 2012' },
+    { src: '/images/quiet-island-08.jpg', caption: 'Quiet Island, 2012' },
+    { src: '/images/quiet-island-09.jpg', caption: 'Quiet Island, 2012' },
+    { src: '/images/quiet-island-10.jpg', caption: 'Quiet Island, 2012' },
+    { src: '/images/quiet-island-11.jpg', caption: 'Quiet Island, 2012' }
   ] },
   { slug: 'private-investigations',
     medium: 'paper', title: 'Private Investigations 2004', title_he: 'חקירות פרטיות 2004', images: [
