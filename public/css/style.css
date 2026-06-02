@@ -273,6 +273,10 @@ main {
   margin-top: 16px;
 }
 
+.works-index-2col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .work-card {
   display: block;
   text-decoration: none;
