@@ -50,7 +50,7 @@ export const works: Work[] = [
     ]
   },
   {
-    slug: 'rishon-lezion-2025',
+    slug: 'untitled',
     medium: 'canvas',
     title: 'Untitled 2025',
     title_he: 'ללא כותרת',
