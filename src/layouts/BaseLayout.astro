@@ -1,5 +1,4 @@
 ---
-import { etcLinks } from '../data/works';
 const { title, currentPath } = Astro.props;
 ---
 
@@ -26,14 +25,9 @@ const { title, currentPath } = Astro.props;
           <li><a href="/stop-motion-installation" class={currentPath === 'stop-motion-installation' ? 'active' : ''}>Stop Motion Installation</a></li>
           <li><a href="/painting" class={currentPath === 'painting' ? 'active' : ''}>Painting</a></li>
           <li><a href="/paper" class={currentPath === 'paper' ? 'active' : ''}>Paper</a></li>
-          <li class="has-sub">
-            <a href="#" aria-haspopup="true">Etc</a>
-            <ul class="submenu">
-              {etcLinks.map((link) => (
-                <li><a href={`/${link.slug}`}>{link.title}</a></li>
-              ))}
-            </ul>
-          </li>
+          <li><a href="/news" class={currentPath === 'news' ? 'active' : ''}>News</a></li>
+          <li><a href="/publications" class={currentPath === 'publications' ? 'active' : ''}>Publications</a></li>
+          <li><a href="/articles" class={currentPath === 'articles' ? 'active' : ''}>Articles</a></li>
           <li><a href="/about" class={currentPath === 'about' ? 'active' : ''}>About</a></li>
           <li><a href="/contact" class={currentPath === 'contact' ? 'active' : ''}>Contact</a></li>
         </ul>
