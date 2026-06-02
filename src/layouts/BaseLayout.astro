@@ -20,7 +20,10 @@ const { title, currentPath } = Astro.props;
         <div class="site-title-he">אלה אמיתי סדובסקי&nbsp;</div>
       </div>
       <nav class="site-nav" aria-label="Primary">
-        <ul>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu">
           <li><a href="/" class={currentPath === 'home' ? 'active' : ''}>Home</a></li>
           <li><a href="/stop-motion-installation" class={currentPath === 'stop-motion-installation' ? 'active' : ''}>Stop Motion Installation</a></li>
           <li><a href="/painting" class={currentPath === 'painting' ? 'active' : ''}>Painting</a></li>
@@ -102,6 +105,17 @@ const { title, currentPath } = Astro.props;
           else if (event.key === 'Escape') closeLightbox();
         }
       });
+
+      (function() {
+        const toggle = document.querySelector('.nav-toggle');
+        const menu = document.getElementById('nav-menu');
+        if (!toggle || !menu) return;
+        toggle.addEventListener('click', function() {
+          const open = menu.classList.toggle('open');
+          toggle.classList.toggle('open', open);
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      })();
     </script>
   </body>
 </html>
