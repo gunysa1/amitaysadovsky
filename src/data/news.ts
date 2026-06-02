@@ -29,7 +29,7 @@ export const news: NewsItem[] = [
     subtitle: 'Solo Exhibition at Rishon LeZion Municipal Gallery',
     image: '/images/rishon-lezion-01.jpg',
     imageAlt: 'Rishon LeZion Municipal Gallery',
-    link: '/rishon-lezion-2025',
+    link: '/untitled',
   },
   {
     title: 'Out There',
