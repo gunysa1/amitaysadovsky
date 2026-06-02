@@ -269,7 +269,7 @@ export const works: Work[] = [
     { src: '/images/shield-of-the-mighty-08.jpg', caption: 'Shield of the Mighty, Mixed media on paper, 78x57 cm, 2011' }
   ] },
   { slug: 'quiet-island',
-    medium: 'video', title: 'Quiet Island - video 2012', title_he: 'אי שקט - וידאו 2012',
+    medium: 'video', title: 'Quiet Island - Performance 2012', title_he: 'אי שקט - מופע 2012',
     video: 'https://player.vimeo.com/video/103327177',
     images: [
     { src: '/images/quiet-island-01.jpg', caption: 'Quiet Island, 2012' },
