@@ -196,10 +196,10 @@ export const works: Work[] = [
   ] },
   { slug: 'spare-parts',
     medium: 'canvas', title: 'Spare Parts 2014-2015', title_he: 'חלקי חילוף 2014-2015', images: [
+    { src: '/images/spare-parts-04.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
     { src: '/images/spare-parts-01.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
     { src: '/images/spare-parts-02.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
     { src: '/images/spare-parts-03.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
-    { src: '/images/spare-parts-04.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
     { src: '/images/spare-parts-05.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
     { src: '/images/spare-parts-06.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
     { src: '/images/spare-parts-07.jpg', caption: 'Spare Parts, Oil, acrylic and fabric collage on canvas, 2014' },
