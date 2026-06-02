@@ -312,6 +312,10 @@ main {
   gap: 15px;
 }
 
+.gallery-2col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .gallery img {
   width: 100%;
   aspect-ratio: 1 / 1;

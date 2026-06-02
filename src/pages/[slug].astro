@@ -25,7 +25,7 @@ const { work } = Astro.props;
     {work.intro && <div class="prose" set:html={work.intro} />}
     {work.intro_he && <div class="prose" dir="rtl" set:html={work.intro_he} />}
 
-    <div class="gallery">
+    <div class={work.medium === 'video' ? 'gallery gallery-2col' : 'gallery'}>
       {work.images.map((image) => (
         <figure>
           <img
