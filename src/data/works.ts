@@ -55,29 +55,34 @@ export const works: Work[] = [
     medium: 'canvas',
     title: 'Untitled 2025',
     title_he: 'ללא כותרת',
+    intro: `<p><em>Text: Efi Gan</em></p>
+<p>Ella Amitay Sadovsky's collage works create a complex experience that moves between reality and imagination, between personal and collective memory, and between aesthetics and unease. The beautiful and the threatening, the real and the imagined, exist side by side: home and family, birth, intimacy and partnership, alongside feelings of abandonment, threat, loss, and anxiety.</p>
+<p>The collages are built upon Toile de Jouy fabrics, which over the past 300 years have become a design staple worldwide and a part of the "foundations of European taste." The very use of these fabrics as a base for the collage works connects story to story — binding the small, familiar scenes printed on the cloth to the artist's own personal narratives.</p>
+<p>Ella's artistic training includes advanced degrees in art from Israel and abroad, alongside an academic background in the sciences (a PhD from the Weizmann Institute and a post-doctorate at UC Berkeley). The fusion of science and art is evident in the way she treats material as an essential component of the work.</p>
+<p>Ella explores the tension between beauty and barrenness, between dazzling decorativeness and lifelessness, creating a statement about contemporary reality and about the domestic space as an emotionally and politically charged arena. The collages take us on a journey — not toward real nature, but toward artificial representations made of wallpaper, paper, and fabric.</p>`,
     intro_he: `<p><em>טקסט: אפי גן</em></p>
 <p>עבודות הקולאז' של אלה אמיתי סדובסקי מייצרות חוויה מורכבת הנעה בין מציאות לדמיון, בין זיכרון אישי לקולקטיבי ובין אסתטיקה לאי נוחות. היפה והמאיימים, הממשי והמדומיין, מתקיימים בעת ובעונה אחת: בית ומשפחה, לידה, אינטימיות וזוגיות, לצד תחושות נטישה, איום, אובדן וחרדה.</p>
 <p>הקולאז'ים נשענים על בדי ה־Toile de Jouy אשר הפכו במשך 300 השנים האחרונות לנכס צאן ברזל עיצובי בכל העולם וכוננו חלק מ'יסודות הטעם האירופי'. עצם השימוש בבדים הללו כבסיס לעבודות הקולאז' מחבר סיפור אל סיפור ואת הסיפורים הקטנים המוכרים שהודפסו על הבדים אל הסיפורים האישיים של היוצרת.</p>
 <p>הכשרתה האמנותית של אלה כוללת תארים מתקדמים באמנות מהארץ ומחו"ל לצד רקע אקדמי במדעים (דוקטורט במכון ויצמן ופוסט־דוקטורט באוניברסיטת ברקלי). השילוב בין מדע לאמנות ניכר באופן שבו היא מתייחסת לחומר כמרכיב מהותי ביצירה.</p>
 <p>אלה חוקרת את המתח שבין יופי לעקרות, בין דקורטיביות מרהיבה לבין חוסר חיות, ויוצרת אמירה על מציאות עכשווית ועל המרחב הביתי כזירה טעונה רגשית ופוליטית. הקולאז'ים מוציאים אותנו למסע, לא אל טבע ממשי, אלא אל ייצוגים מלאכותיים עשויים טפט, נייר ובד.</p>`,
     images: [
-      { src: '/images/untitled-17.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/untitled-01.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/untitled-02.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/untitled-03.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/untitled-04.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/untitled-05.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/untitled-06.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/untitled-07.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/untitled-08.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/untitled-09.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/untitled-10.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/untitled-11.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/untitled-12.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/untitled-13.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/untitled-14.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/untitled-15.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/untitled-16.jpg', caption: 'Installation view, 2025' },
+      { src: '/images/untitled-17.jpg', caption: 'Untitled, 2025' },
+      { src: '/images/untitled-01.jpg', caption: 'Untitled, 2025' },
+      { src: '/images/untitled-02.jpg', caption: 'Untitled, 2025' },
+      { src: '/images/untitled-03.jpg', caption: 'Untitled, 2025' },
+      { src: '/images/untitled-04.jpg', caption: 'Untitled, 2025' },
+      { src: '/images/untitled-05.jpg', caption: 'Untitled, 2025' },
+      { src: '/images/untitled-06.jpg', caption: 'Untitled, 2025' },
+      { src: '/images/untitled-07.jpg', caption: 'Untitled, 2025' },
+      { src: '/images/untitled-08.jpg', caption: 'Untitled, 2025' },
+      { src: '/images/untitled-09.jpg', caption: 'Untitled, 2025' },
+      { src: '/images/untitled-10.jpg', caption: 'Untitled, 2025' },
+      { src: '/images/untitled-11.jpg', caption: 'Untitled, 2025' },
+      { src: '/images/untitled-12.jpg', caption: 'Untitled, 2025' },
+      { src: '/images/untitled-13.jpg', caption: 'Untitled, 2025' },
+      { src: '/images/untitled-14.jpg', caption: 'Untitled, 2025' },
+      { src: '/images/untitled-15.jpg', caption: 'Untitled, 2025' },
+      { src: '/images/untitled-16.jpg', caption: 'Untitled, 2025' },
       { src: '/images/installation-view-01.jpg', caption: 'Installation view, 2025' },
       { src: '/images/installation-view-02.jpg', caption: 'Installation view, 2025' },
       { src: '/images/installation-view-03.jpg', caption: 'Installation view, 2025' },
