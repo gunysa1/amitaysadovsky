@@ -1,13 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { works } from '../data/works';
-const canvasWorks = works.filter(w => w.medium === 'canvas');
+const videoWorks = works.filter(w => w.medium === 'video');
 ---
-<BaseLayout title="Canvas — Ella Amitay Sadovsky" currentPath="canvas">
+<BaseLayout title="Stop Motion Installation — Ella Amitay Sadovsky" currentPath="stop-motion-installation">
   <main>
-    <h2 class="page-title">Canvas</h2>
+    <h2 class="page-title">Stop Motion Installation</h2>
     <div class="works-index">
-      {canvasWorks.map(work => (
+      {videoWorks.map(work => (
         <a href={`/${work.slug}`} class="work-card">
           <img class="work-card-img" src={work.images[0].src} alt={work.title} loading="lazy" />
           <div class="work-card-title">{work.title}</div>
