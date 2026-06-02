@@ -517,13 +517,14 @@ main {
 }
 
 @media (max-width: 768px) {
-  /* Header */
-  .site-header { padding: 20px 16px 0; }
-  .title-row { flex-wrap: wrap; gap: 12px; }
-  .title-left { gap: 12px; }
+  /* Header — centered on mobile */
+  .site-header { padding: 20px 16px 0; text-align: center; }
+  .title-row { flex-direction: column; flex-wrap: wrap; gap: 6px; justify-content: center; align-items: center; }
+  .title-left { gap: 12px; justify-content: center; }
   .site-logo { height: 36px; }
   .site-title { font-size: 20px; letter-spacing: 1px; }
   .site-title-he { font-size: 22px; letter-spacing: 1px; }
+  .nav-toggle { margin: 12px auto 0; }
 
   /* Nav — collapse into hamburger */
   .nav-toggle { display: flex; }
