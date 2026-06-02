@@ -61,6 +61,7 @@ export const works: Work[] = [
 <p>הכשרתה האמנותית של אלה כוללת תארים מתקדמים באמנות מהארץ ומחו"ל לצד רקע אקדמי במדעים (דוקטורט במכון ויצמן ופוסט־דוקטורט באוניברסיטת ברקלי). השילוב בין מדע לאמנות ניכר באופן שבו היא מתייחסת לחומר כמרכיב מהותי ביצירה.</p>
 <p>אלה חוקרת את המתח שבין יופי לעקרות, בין דקורטיביות מרהיבה לבין חוסר חיות, ויוצרת אמירה על מציאות עכשווית ועל המרחב הביתי כזירה טעונה רגשית ופוליטית. הקולאז'ים מוציאים אותנו למסע, לא אל טבע ממשי, אלא אל ייצוגים מלאכותיים עשויים טפט, נייר ובד.</p>`,
     images: [
+      { src: '/images/rishon-lezion-17.jpg', caption: 'Installation view, 2025' },
       { src: '/images/rishon-lezion-01.jpg', caption: 'Installation view, 2025' },
       { src: '/images/rishon-lezion-02.jpg', caption: 'Installation view, 2025' },
       { src: '/images/rishon-lezion-03.jpg', caption: 'Installation view, 2025' },
@@ -77,7 +78,6 @@ export const works: Work[] = [
       { src: '/images/rishon-lezion-14.jpg', caption: 'Installation view, 2025' },
       { src: '/images/rishon-lezion-15.jpg', caption: 'Installation view, 2025' },
       { src: '/images/rishon-lezion-16.jpg', caption: 'Installation view, 2025' },
-      { src: '/images/rishon-lezion-17.jpg', caption: 'Installation view, 2025' },
       { src: '/images/rishon-lezion-18.jpg', caption: 'Installation view, 2025' },
       { src: '/images/rishon-lezion-19.jpg', caption: 'Installation view, 2025' },
       { src: '/images/rishon-lezion-20.jpg', caption: 'Installation view, 2025' },

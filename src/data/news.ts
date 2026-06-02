@@ -27,7 +27,7 @@ export const news: NewsItem[] = [
     title: 'Untitled',
     date: '2025',
     subtitle: 'Solo Exhibition at Rishon LeZion Municipal Gallery',
-    image: '/images/rishon-lezion-01.jpg',
+    image: '/images/rishon-lezion-17.jpg',
     imageAlt: 'Rishon LeZion Municipal Gallery',
     link: '/untitled',
   },
