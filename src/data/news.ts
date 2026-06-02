@@ -48,6 +48,15 @@ export const news: NewsItem[] = [
     link: '/Without-Leaving-Home',
   },
   {
+    title: 'Flying Cargo',
+    date: '2020',
+    subtitle: 'Art on the Road — Painted Truck Project',
+    description: 'Two fantastical landscape scenes painted on a Flying Cargo truck, inspired by hikes in the Jerusalem hills near the artist’s home during the pandemic.',
+    image: '/images/flying-cargo.jpg',
+    imageAlt: 'Flying Cargo painted truck',
+    link: 'https://www.artontheroad.co.il/en/%D7%90%D7%9C%D7%94%D7%90%D7%9E%D7%99%D7%AA%D7%99%D7%A1%D7%93%D7%95%D7%91%D7%A1%D7%A7%D7%99',
+  },
+  {
     title: 'Glasshouse',
     date: '2019',
     subtitle: 'Solo Exhibition at Gordon Gallery, Tel Aviv',

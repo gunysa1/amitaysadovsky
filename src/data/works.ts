@@ -163,7 +163,9 @@ export const works: Work[] = [
     { src: '/images/2018-21.jpg', caption: 'Oil on Canvas, 2018' }
   ] },
   { slug: 'seven',
-    medium: 'video', title: 'Seven 2016', title_he: 'שבע 2016', images: [
+    medium: 'video', title: 'Seven 2016', title_he: 'שבע 2016',
+    video: 'https://www.youtube.com/embed/0D7DiB0x-kA',
+    images: [
     { src: '/images/seven-01.jpg', caption: 'Seven (Installation View), 2016' },
     { src: '/images/seven-02.jpg', caption: 'Seven (Installation View), 2016' },
     { src: '/images/seven-03.jpg', caption: 'Seven (Installation View), 2016' },
