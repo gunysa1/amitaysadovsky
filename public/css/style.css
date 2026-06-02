@@ -316,6 +316,14 @@ main {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.video-caption {
+  font-size: 13px;
+  font-style: italic;
+  color: #777;
+  margin-top: 12px;
+  text-align: center;
+}
+
 .gallery img {
   width: 100%;
   aspect-ratio: 1 / 1;

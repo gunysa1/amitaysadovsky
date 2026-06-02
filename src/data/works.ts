@@ -12,6 +12,7 @@ export type Work = {
   intro?: string;
   intro_he?: string;
   video?: string;
+  videoCaption?: string;
   images: WorkImage[];
 };
 
@@ -165,6 +166,7 @@ export const works: Work[] = [
   { slug: 'seven',
     medium: 'video', title: 'Seven 2016', title_he: 'שבע 2016',
     video: 'https://www.youtube.com/embed/0D7DiB0x-kA',
+    videoCaption: 'A digital documentation of the installation "Seven" by Ella Amitay Sadovsky',
     images: [
     { src: '/images/seven-01.jpg', caption: 'Seven (Installation View), 2016' },
     { src: '/images/seven-02.jpg', caption: 'Seven (Installation View), 2016' },
