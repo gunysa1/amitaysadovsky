@@ -81,13 +81,13 @@ export const news: NewsItem[] = [
     imageAlt: 'I to eye',
   },
   {
-    title: '7 MINUTES',
+    title: 'Seven',
     date: 'Winner: Rosenblatt Prize 2016',
     dateColor: '#d4af37',
     subtitle: 'Solo Show at The Artist House, Tel Aviv',
     description: 'Curator: Orly Hoffman. Solo prize exhibition of the 2016 Ann and Ari Rosenblatt Prize for Visual Art.',
     image: '/images/seven-01.jpg',
-    imageAlt: '7 Minutes',
+    imageAlt: 'Seven',
     link: '/seven',
   },
   {
