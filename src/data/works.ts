@@ -308,6 +308,23 @@ export const works: Work[] = [
     { src: '/images/private-investigations-15.jpg', caption: 'Charcoal on paper, 2004' },
     { src: '/images/private-investigations-16.jpg', caption: 'Charcoal on paper, 2004' }
   ] },
+  { slug: 'charcoal-drawings-2004',
+    medium: 'paper', title: 'Charcoal Drawings 2004', title_he: 'רישומי פחם 2004', images: [
+    { src: '/images/charcoal-2004-01.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/charcoal-2004-02.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/charcoal-2004-03.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/charcoal-2004-04.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/charcoal-2004-05.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/charcoal-2004-06.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/charcoal-2004-07.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/charcoal-2004-08.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/charcoal-2004-09.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/charcoal-2004-10.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/charcoal-2004-11.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/charcoal-2004-12.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/charcoal-2004-13.jpg', caption: 'Charcoal on paper, 2004' },
+    { src: '/images/charcoal-2004-14.jpg', caption: 'Charcoal on paper, 2004' }
+  ] },
 ];
 
 export const etcLinks = [
