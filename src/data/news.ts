@@ -15,6 +15,15 @@ export type NewsItem = {
 
 export const news: NewsItem[] = [
   {
+    title: 'Culture Agent — Kan 11',
+    date: '31.10.2025',
+    subtitle: 'TV Feature on “Suddenly, just when you thought it was gone”',
+    description: 'A “Sohen Tarbut” (Culture Agent) segment on Kan 11 about Ella Amitay Sadovsky’s exhibition at the Petach Tikva Museum of Art.',
+    image: '/images/suddenly-invite.jpg',
+    imageAlt: 'Culture Agent, Kan 11 — Suddenly, just when you thought it was gone',
+    link: 'https://youtu.be/V-x5z3jnRDQ',
+  },
+  {
     title: 'Suddenly, just when you thought it was gone',
     date: 'July – November 2025',
     subtitle: 'Solo Exhibition at Petach Tikva Museum of Art',
