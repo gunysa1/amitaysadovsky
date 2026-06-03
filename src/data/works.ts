@@ -137,12 +137,18 @@ export const works: Work[] = [
   },
   { slug: 'Glasshouse',
     medium: 'canvas', title: 'Glasshouse 2019', title_he: 'בית הזכוכית 2019', images: [
-    { src: '/images/glasshouse-01.jpg', caption: 'Green painting from Berkeley, bed and yellow lemons, Oil, Acrylic and Fabric Collage on Canvas, 165x200 cm, 2019' },
-    { src: '/images/glasshouse-02.jpg', caption: 'Piano and chair with white cover, watch and blue butterfly lamp, Oil, Acrylic and Fabric Collage on Canvas, 165x200 cm, 2019' },
-    { src: '/images/glasshouse-03.jpg', caption: 'Red sofa, yellow pot and Sara in a white dress, Oil, Acrylic and Fabric Collage on Canvas, 165x200 cm, 2019' },
-    { src: '/images/glasshouse-04.jpg', caption: 'Tsar Ferdinand and Galila on their way to the Holy Land, Oil, Acrylic and Fabric Collage on Canvas, 210x155 cm, 2019' },
-    { src: '/images/glasshouse-05.jpg', caption: 'Attic in Pan, Galila and Mud River, Oil, Acrylic and Fabric Collage on Canvas, 175x155 cm, 2019' },
-    { src: '/images/glasshouse-06.jpg', caption: 'Pan\'s Cottage, Oil, Acrylic and Fabric Collage on Canvas, 200x155 cm, 2019' }
+    { src: '/images/glasshouse-01.jpg', caption: 'Oil, Acrylic and Fabric Collage on Canvas, 2019' },
+    { src: '/images/glasshouse-02.jpg', caption: 'Oil, Acrylic and Fabric Collage on Canvas, 2019' },
+    { src: '/images/glasshouse-03.jpg', caption: 'Oil, Acrylic and Fabric Collage on Canvas, 2019' },
+    { src: '/images/glasshouse-04.jpg', caption: 'Oil, Acrylic and Fabric Collage on Canvas, 2019' },
+    { src: '/images/glasshouse-05.jpg', caption: 'Oil, Acrylic and Fabric Collage on Canvas, 2019' },
+    { src: '/images/glasshouse-06.jpg', caption: 'Oil, Acrylic and Fabric Collage on Canvas, 2019' },
+    { src: '/images/glasshouse-07.jpg', caption: 'Oil, Acrylic and Fabric Collage on Canvas, 2019' },
+    { src: '/images/glasshouse-08.jpg', caption: 'View from Window, Oil on Canvas, 2019' },
+    { src: '/images/glasshouse-09.jpg', caption: 'Glasshouse (Triptych), Oil, Acrylic and Fabric Collage on Canvas, 2019' },
+    { src: '/images/glasshouse-10.jpg', caption: 'Triptych, installation view, Gordon Gallery, 2019' },
+    { src: '/images/glasshouse-11.jpg', caption: 'Installation view, Gordon Gallery, 2019' },
+    { src: '/images/glasshouse-12.jpg', caption: 'Installation view, Gordon Gallery, 2019' }
   ] },
   { slug: '2018',
     medium: 'canvas', title: '2018', title_he: '2018', images: [
