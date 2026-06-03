@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { works } from '../data/works';
+import type { WorkImage } from '../data/works';
 
 export async function getStaticPaths() {
   return works.map((work) => ({
@@ -10,6 +11,14 @@ export async function getStaticPaths() {
 }
 
 const { work } = Astro.props;
+
+// If a gallery mixes installation views and artwork photos, show the views first.
+const isView = (img: WorkImage) => /installation view/i.test(img.caption ?? '');
+const hasViews = work.images.some(isView);
+const hasPhotos = work.images.some((img) => !isView(img));
+const galleryImages = (hasViews && hasPhotos)
+  ? [...work.images].sort((a, b) => Number(isView(b)) - Number(isView(a)))
+  : work.images;
 ---
 
 <BaseLayout title={work.title}>
@@ -28,7 +37,7 @@ const { work } = Astro.props;
     {work.intro_he && <div class="prose" dir="rtl" set:html={work.intro_he} />}
 
     <div class={work.medium === 'video' ? 'gallery gallery-2col' : 'gallery'}>
-      {work.images.map((image) => (
+      {galleryImages.map((image) => (
         <figure>
           <img
             src={image.src}
