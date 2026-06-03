@@ -11,6 +11,7 @@ const videoWorks = works.filter(w => w.medium === 'video');
         <a href={`/${work.slug}`} class="work-card">
           <img class="work-card-img" src={work.images[0].src} alt={work.title} loading="lazy" />
           <div class="work-card-title">{work.title}</div>
+          {work.award && <div class="work-card-award">{work.award}</div>}
         </a>
       ))}
     </div>

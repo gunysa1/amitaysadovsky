@@ -9,6 +9,7 @@ export type Work = {
   title: string;
   title_he: string;
   medium: 'video' | 'canvas' | 'paper';
+  award?: string;
   intro?: string;
   intro_he?: string;
   video?: string;
@@ -176,6 +177,7 @@ export const works: Work[] = [
   ] },
   { slug: 'seven',
     medium: 'video', title: 'Seven 2016', title_he: 'שבע 2016',
+    award: 'Recipient of the Ann and Ari Rosenblatt Prize for Visual Art',
     video: 'https://www.youtube.com/embed/0D7DiB0x-kA',
     videoCaption: 'A digital documentation of the installation "Seven" by Ella Amitay Sadovsky',
     images: [

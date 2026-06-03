@@ -15,6 +15,7 @@ const { work } = Astro.props;
 <BaseLayout title={work.title}>
   <main>
     <h2 class="page-title">{work.title}</h2>
+    {work.award && <p class="work-award">{work.award}</p>}
 
     {work.video && (
       <div style="margin-bottom: 40px;">
